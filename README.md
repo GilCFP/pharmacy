@@ -8,14 +8,14 @@ Este projeto é um sistema de farmácia desenvolvido em C++ como parte do curso 
 
 A estrutura do projeto é organizada da seguinte forma:
 
-- **Produto (Superclasse):** Classe base que representa qualquer produto vendido na farmácia.
+### Produto: Classe base que representa qualquer produto vendido na farmácia.
   - **Remédio (Subclasse):** Representa os medicamentos vendidos na farmácia.
     - **Analgesico (Subclasse de Remédio):** Medicamentos usados para aliviar a dor.
     - **Antibiotico (Subclasse de Remédio):** Medicamentos usados para tratar infecções.
     - **Remedio_Controlado (Subclasse de Remédio):** Medicamentos que necessitam de receita médica.
   - **Alimentos (Subclasse):** Representa os alimentos vnedidos na farmácia.
   - **Cosmetico (Subclasse):** Representa os produtos de beleza vendidos na farmácia.
-- **Funcionario (Superclasse):** Classe de base que representa todos os funcionários do estabelecimento.
+### Funcionario: Classe de base que representa todos os funcionários do estabelecimento.
   - **Vendedor (Subclasse):** Funcionário responsável pelas vendas.
   - **Farmaceutico (Subclasse):** Funcionário responsável por prescrever remédios e verificar receitas.
 
