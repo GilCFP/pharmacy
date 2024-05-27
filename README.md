@@ -10,11 +10,14 @@ A estrutura do projeto é organizada da seguinte forma:
 
 - **Produto (Superclasse):** Classe base que representa qualquer produto vendido na farmácia.
   - **Remédio (Subclasse):** Representa os medicamentos vendidos na farmácia.
-    - **Analgésico (Subclasse de Remédio):** Medicamentos usados para aliviar a dor.
-    - **Antibiótico (Subclasse de Remédio):** Medicamentos usados para tratar infecções.
-    - **Remédio Controlado (Subclasse de Remédio):** Medicamentos que necessitam de receita médica.
-  - **Bala (Subclasse):** Representa as balas vendidas na farmácia.
-  - **Cosmético (Subclasse):** Representa os produtos de beleza vendidos na farmácia.
+    - **Analgesico (Subclasse de Remédio):** Medicamentos usados para aliviar a dor.
+    - **Antibiotico (Subclasse de Remédio):** Medicamentos usados para tratar infecções.
+    - **Remedio_Controlado (Subclasse de Remédio):** Medicamentos que necessitam de receita médica.
+  - **Alimentos (Subclasse):** Representa os alimentos vnedidos na farmácia.
+  - **Cosmetico (Subclasse):** Representa os produtos de beleza vendidos na farmácia.
+- **Funcionario (Superclasse):** Classe de base que representa todos os funcionários do estabelecimento.
+  - **Vendedor (Subclasse):** Funcionário responsável pelas vendas.
+  - **Farmaceutico (Subclasse):** Funcionário responsável por prescrever remédios e verificar receitas.
 
 Cada classe terá suas próprias propriedades e métodos específicos, que são herdados e/ou sobrescritos conforme necessário.
 
@@ -22,13 +25,10 @@ Cada classe terá suas próprias propriedades e métodos específicos, que são 
 
 - **Cadastro de Produtos:** Permite adicionar novos produtos à farmácia.
 - **Consulta de Produtos:** Permite visualizar informações sobre os produtos cadastrados.
-- **Compra de Produtos:** Simula a compra de produtos, diminuindo o estoque.
+- **Compra de Produtos:** Simula a compra de produtos.
 - **Receita Médica:** Gestão de receitas médicas para compra de remédios controlados.
 
 ## Tecnologias Utilizadas
 
 - **Linguagem de Programação:** C++
 - **Paradigma:** Programação Orientada a Objetos
-
-## Estrutura de Arquivos
-
