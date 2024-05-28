@@ -7,7 +7,7 @@ Este projeto é um sistema de farmácia desenvolvido em C++ como parte do curso 
 ## Estrutura do Projeto
 
 A estrutura do projeto é organizada da seguinte forma:
-
+### Simulador: Classe utilizada para simular o sistema e realizar a comunicação entre as classes
 ### Produto: Classe base que representa qualquer produto vendido na farmácia.
   - **Remédio (Subclasse):** Representa os medicamentos vendidos na farmácia.
     - **Analgesico (Subclasse de Remédio):** Medicamentos usados para aliviar a dor.
