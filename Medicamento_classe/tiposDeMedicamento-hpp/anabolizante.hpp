@@ -1,7 +1,6 @@
 #ifndef ANABOLIZANTE
 #define ANABOLIZANTE
 
-#include "../../Produto_classe/Produto/produto.hpp"
 #include "../medicamento.hpp"
 
 #include <string>

@@ -1,7 +1,6 @@
 #ifndef ANALGESICO
 #define ANALGESICO
 
-#include "../../Produto_classe/Produto/produto.hpp"
 #include "../medicamento.hpp"
 
 class Analgesico : public Medicamento {
