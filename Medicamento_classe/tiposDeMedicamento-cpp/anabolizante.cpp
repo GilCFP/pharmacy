@@ -11,9 +11,3 @@ Medicamento(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco)
 {
 
 }
-
-string Anabolizante::InformacoesProduto() {
-
-    return "ATENÇÃO: Venda vedada para menores de 18 anos. \n Descricao:  " + Produto::getDescricaoProduto() + "\t" + "Quantidade: " + std::to_string(Medicamento::getQuantidadeProduto()) + "\t" + "Prescricao " + this->prescricao + "\t" + "Preco: " + std::to_string(this->preco);
-
-}

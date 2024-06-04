@@ -8,7 +8,6 @@ class Antibiotico : public Medicamento {
     public:
 
         Antibiotico(string prescricao, bool precisaDeReceita, string descricaoprod, int quantidadeprod, float preco);
-        string InformacoesProduto() override;
 
 };
 
