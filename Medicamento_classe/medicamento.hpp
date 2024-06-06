@@ -17,7 +17,6 @@ class Medicamento : public Produto {
 
         Medicamento(string prescricao, bool precisaDeReceita, string descricaoprod, int quantidadeprod, float preco);
         string getPrescricao();
-        virtual string InformacoesProduto() = 0;
 
 };
 

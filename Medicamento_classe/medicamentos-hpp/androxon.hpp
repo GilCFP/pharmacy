@@ -10,7 +10,7 @@ class Androxon : public Anabolizante{
 
     public:
         Androxon(string prescricao, bool precisaDeReceita, string descricaoprod, int quantidadeprod, float preco);
-
+        string InformacoesProduto() override;
 };
 
 #endif

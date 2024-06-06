@@ -1,4 +1,4 @@
-#include "..\projeto_farmacia\Produto_classe\pharmacy\produto\produto.hpp"
+#include "produto.hpp"
 
 Produto::Produto(string descricaoprod, int quantidadeprod, float preco):
    descricaoprod(descricaoprod), quantidadeprod(quantidadeprod), preco(preco)
