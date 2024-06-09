@@ -4,9 +4,9 @@
 #include<iostream>
 #include<string>
 #include<vector>
-#include"Receita.hpp"
-#include"Pessoa.hpp"
-#include"Produto.hpp"
+#include"../Receita_classe/Receita.hpp"
+#include"../Pessoa.hpp"
+#include"../Produto_classe_pai/Produto/produto.hpp"
 
 using std::string;
 using std::vector;
@@ -14,11 +14,11 @@ using std::vector;
 class Cliente : public Pessoa
 {
 private:
-   
+
    vector<Receita> receitas;
    vector<Produto> carrinho;
-   
-   
+
+
 public:
     Cliente(string nome, int idade);
     void addCompraCarrinho(Produto produto);
