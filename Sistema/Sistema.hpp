@@ -1,4 +1,8 @@
 #include "../Produto_classe_pai/Produto/produto.hpp"
+#include "../Classe_Funcionario/cabecalho/Farmaceutico.hpp"
+#include "../Classe_Funcionario/cabecalho/Gerente.hpp"
+#include "../Classe_Funcionario/cabecalho/Vendedor.hpp"
+
 class Sistema
 {
 private:
