@@ -1,7 +1,7 @@
 #ifndef SERINGA
 #define SERINGA
 
-#include "../../Produto_classe/Produto/produto.hpp"
+#include "../../Produto_classe_pai/Produto/produto.hpp"
 
 class Seringa : public Produto {
 
