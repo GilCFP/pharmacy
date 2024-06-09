@@ -24,3 +24,7 @@ float Produto::getPrecoProduto()
     float valor = this->preco;
     return round(valor*100)/100;
 }
+
+string Produto::InformacoesProduto(){
+    return this->descricaoprod;
+}

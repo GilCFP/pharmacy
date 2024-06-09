@@ -5,7 +5,7 @@
 #include <vector>
 #include <math.h>
 #include <iomanip>
-#include <sstream> 
+#include <sstream>
 
 using std::string;
 using std::vector;
@@ -20,12 +20,12 @@ class Produto
         float preco;
 
     public:
-        
+
         Produto(string descricaoprod, int quantidadeprod, float preco);
         string getDescricaoProduto();
         int getQuantidadeProduto();
         float getPrecoProduto();
-        virtual string InformacoesProduto()=0;
+        virtual string InformacoesProduto();
 };
 
 #endif

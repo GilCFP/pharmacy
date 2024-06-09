@@ -2,8 +2,7 @@
 #include<string>
 #include<vector>
 #include"Cliente.hpp"
-#include"Pessoa.hpp"
-#include"Produto.hpp"
+
 
 using std::string;
 using std::cout;
@@ -11,7 +10,7 @@ using std::endl;
 
 Cliente::Cliente(string nome, int idade):Pessoa(nome, idade)
 {
-    
+
 }
 
 string Cliente::pegarNome()
@@ -38,7 +37,7 @@ void Cliente::verCompras()
 {
     for(auto& produto : carrinho)
     {
-        cout << produto.getNome() << endl;
+        cout << produto.getDescricaoProduto() << endl;
     }
 }
 
