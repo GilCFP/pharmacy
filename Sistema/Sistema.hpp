@@ -7,7 +7,6 @@ class Sistema
 {
 private:
     vector <Produto> estoque;
-    vector <Produto> carrinho;
 
     Vendedor vendedor;
     Farmaceutico farmaceutico;
@@ -20,6 +19,11 @@ public:
     Sistema(Vendedor vendedor, Farmaceutico farmaceutico, Gerente gerente);
     ~Sistema();
 
+    void iniciar();
+    
+    bool adicionarAoEstoque(Produto, int quantidade, Gerente);
+    bool removerDoEstoque(Produto, int quantidade, Gerente);
+
     bool adicionarAoCarrinho(Produto, int quantidade, Cliente);
     bool adicionarAoCarrinho(Produto, Cliente);
 
@@ -27,5 +31,5 @@ public:
     bool removerDoCarrinho(Produto, Cliente);
 
     bool olharCarrinho(Cliente);
-    bool finalizarCompra(Cliente);
+    bool finalizarCompra(Cliente, Vendedor);
 };
