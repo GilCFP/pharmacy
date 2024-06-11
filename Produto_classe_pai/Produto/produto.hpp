@@ -21,6 +21,7 @@ class Produto
 
     public:
 
+        Produto();
         Produto(string descricaoprod, int quantidadeprod, float preco);
         string getDescricaoProduto();
         int getQuantidadeProduto();
