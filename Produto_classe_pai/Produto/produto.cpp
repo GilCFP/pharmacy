@@ -2,6 +2,11 @@
 #include <cmath>
 using std::round;
 
+Produto::Produto()
+{
+    
+}
+
 Produto::Produto(string descricaoprod, int quantidadeprod, float preco):
    descricaoprod(descricaoprod), quantidadeprod(quantidadeprod), preco(preco)
 {
@@ -23,8 +28,4 @@ float Produto::getPrecoProduto()
 {
     float valor = this->preco;
     return round(valor*100)/100;
-}
-
-string Produto::InformacoesProduto(){
-    return this->descricaoprod;
 }

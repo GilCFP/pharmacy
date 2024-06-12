@@ -21,11 +21,12 @@ class Produto
 
     public:
 
+        Produto();
         Produto(string descricaoprod, int quantidadeprod, float preco);
         string getDescricaoProduto();
         int getQuantidadeProduto();
         float getPrecoProduto();
-        virtual string InformacoesProduto();
+        virtual string InformacoesProduto() = 0;
 };
 
 #endif

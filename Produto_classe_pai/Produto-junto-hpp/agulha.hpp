@@ -1,11 +1,12 @@
 #ifndef AGULHA
 #define AGULHA
 
-#include "../../Produto_classe_pai/Produto/produto.hpp"
+#include "../Produto/produto.hpp"
 
 class Agulha : public Produto{
 
     public:
+        Agulha();
         Agulha(string descricaoprod, int quantidadeprod, float preco);
         string InformacoesProduto() override;
 

@@ -1,7 +1,7 @@
 #ifndef MEDICAMENTO
 #define MEDICAMENTO
 
-#include "../Produto_classe_pai/Produto/produto.hpp"
+#include "Produto/produto.hpp"
 #include <string>
 
 using std::string;
