@@ -5,6 +5,11 @@
 
 using std::string;
 
+Seringa::Seringa()
+{
+    
+}
+
 Seringa::Seringa(string descricaoprod, int quantidadeprod, float preco):
 Produto(descricaoprod, quantidadeprod, preco)
 {

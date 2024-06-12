@@ -4,13 +4,21 @@
 #include <iostream>
 
 using std::string;
+using std::cout;
+using std::endl;
 
 Controlado::Controlado(string prescricao, bool precisaDeReceita, string descricaoprod, int quantidadeprod, float preco):
 Medicamento(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco)
-{
-    if(Controlado::precisaDeReceita == false){
+{   
+    try{
+        if(Controlado::precisaDeReceita == false){
 
-        throw "Não permitido: valor inválido";
+            throw "Nao permitido: valor invalido.";
+
+        }
+    }  catch (string e) {
+
+        cout << e << endl;
 
     }
 

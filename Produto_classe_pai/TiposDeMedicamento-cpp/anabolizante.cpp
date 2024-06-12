@@ -13,12 +13,23 @@ Anabolizante::Anabolizante(string prescricao, bool precisaDeReceita, string desc
 Medicamento(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco)
 {
 
-    if(agulha->getQuantidadeProduto() != quantidadeprod){
+    try{    
+        if(agulha->getQuantidadeProduto() == quantidadeprod){
 
-        throw "Não permitido: Valores diferentes.";
+            this->agulha = agulha;
+            
+
+        } else {
+
+            throw "Nao permitido: Valores diferentes.";
+
+        }
+    } catch(string e) {
+        
+        cout << e << endl;
 
     }
-    this->agulha = agulha;
+        
 
 }
 
