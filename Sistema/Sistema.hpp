@@ -3,33 +3,31 @@
 #include "../Pessoa_classe/Classe_Funcionario/cabecalho/Gerente.hpp"
 #include "../Pessoa_classe/Classe_Funcionario/cabecalho/Vendedor.hpp"
 #include "../Pessoa_classe/Cliente_classe/Cliente.hpp"
+#include "../Produto_classe_pai/Produto/Item.hpp"
 class Sistema
 {
 private:
-    vector <Produto> estoque;
+    vector <Item*> estoque;
 
     Vendedor vendedor;
     Farmaceutico farmaceutico;
     Gerente gerente;
-    bool produtoDisponivel(Produto);
+    int disponibilidadeItem(Item*);
 
 
 public:
-    Sistema(Vendedor vendedor, Farmaceutico farmaceutico);
     Sistema(Vendedor vendedor, Farmaceutico farmaceutico, Gerente gerente);
     ~Sistema();
 
     void iniciar();
-    
-    bool adicionarAoEstoque(Produto, int quantidade, Gerente);
-    bool removerDoEstoque(Produto, int quantidade, Gerente);
 
-    bool adicionarAoCarrinho(Produto, int quantidade, Cliente);
-    bool adicionarAoCarrinho(Produto, Cliente);
+    bool adicionarAoEstoque(Item*);
+    bool removerDoEstoque(Item*);
 
-    bool removerDoCarrinho(Produto, int quantidade, Cliente);
-    bool removerDoCarrinho(Produto, Cliente);
+    bool adicionarAoCarrinho(Item*, Cliente*);
 
-    bool olharCarrinho(Cliente);
-    bool finalizarCompra(Cliente, Vendedor);
+    bool removerDoCarrinho(Item*, Cliente*);
+
+    bool olharCarrinho(Cliente*);
+    bool finalizarCompra(Cliente*, Vendedor*);
 };
