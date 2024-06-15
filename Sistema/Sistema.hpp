@@ -20,16 +20,14 @@ public:
     ~Sistema();
 
     void iniciar();
-    
+
     bool adicionarAoEstoque(Item*);
     bool removerDoEstoque(Item*);
 
     bool adicionarAoCarrinho(Item*, Cliente*);
-    bool adicionarAoCarrinho(Item*, Cliente*);
 
-    bool removerDoCarrinho(Produto, int quantidade, Cliente);
-    bool removerDoCarrinho(Produto, Cliente);
+    bool removerDoCarrinho(Item*, Cliente*);
 
-    bool olharCarrinho(Cliente);
-    bool finalizarCompra(Cliente, Vendedor);
+    bool olharCarrinho(Cliente*);
+    bool finalizarCompra(Cliente*, Vendedor*);
 };

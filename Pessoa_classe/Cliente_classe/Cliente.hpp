@@ -13,7 +13,7 @@ using std::vector;
 
 class Cliente : public Pessoa
 {
-private:
+public:
 
    vector<Receita> receitas;
    vector<Produto> carrinho;

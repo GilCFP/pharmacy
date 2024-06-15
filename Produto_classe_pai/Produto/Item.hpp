@@ -1,9 +1,9 @@
 #include "produto.hpp"
 
-Class Item(){
+class Item{
   public:
     Produto* produto;
     int total;
     Item(Produto* produto, int total);
     ~Item();
-}
+};
