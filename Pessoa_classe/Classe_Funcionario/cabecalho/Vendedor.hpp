@@ -8,6 +8,6 @@ class Vendedor : public Funcionario
 {
     public:
         Vendedor();
-        float cobrar(vector<Produto> carrinho);
+        float cobrar(vector<Item> carrinho);
 };
 #endif
