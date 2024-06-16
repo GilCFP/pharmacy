@@ -28,16 +28,62 @@ void Cliente::addReceita(Receita receita)
     this->receitas.push_back(receita);
 }
 
-void Cliente::addCompraCarrinho(Produto produto)
+bool Cliente::addCompraCarrinho(Item* item)
 {
-    this->carrinho.push_back(produto);
+  try
+  {
+    for (auto &i : carrinho)
+    {
+      if (i->produto == item->produto)
+      {
+        i->total += item->total;
+        return true;
+      }
+    }
+    this->carrinho.push_back(item);
+    return true;
+  }
+  catch (const std::exception &e)
+  {
+    std::cerr << "Erro:" << e.what() << std::endl;
+    return false;
+  }
 }
+
+bool Cliente::removeCompraCarrinho(Item* item)
+{
+    try
+    {
+        for (auto &i : carrinho)
+        {
+            if (i->produto == item->produto)
+            {
+                if(i->total < item->total)
+                {
+                    return false;
+                }else
+                    i->total -= item->total;
+                    return true;
+
+            }
+        }
+        return false;
+    }
+    catch(const std::exception &e)
+    {
+        std::cerr << "Erro:" << e.what() << std::endl;
+        return false;
+    }
+
+}
+
 
 void Cliente::verCompras()
 {
-    for(auto& produto : carrinho)
+    for(auto &item : carrinho)
     {
-        cout << produto.getDescricaoProduto() << endl;
+        cout << item->produto->getDescricaoProduto() << ": " <<item->getTotal()<< endl;
+
     }
 }
 

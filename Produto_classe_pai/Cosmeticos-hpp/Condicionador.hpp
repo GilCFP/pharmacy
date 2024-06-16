@@ -1,7 +1,7 @@
 #ifndef CONDICIONADOR
 #define CONDICIONADOR
 
-#include "..\TiposdeProduto-hpp\cosmetico.hpp"
+#include "../TiposdeProduto-hpp/cosmetico.hpp"
 
 class Condicionador : public Cosmetico
 {

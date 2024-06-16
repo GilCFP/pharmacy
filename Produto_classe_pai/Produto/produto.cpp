@@ -1,4 +1,4 @@
-#include "..\Produto\produto.hpp"
+#include "../Produto/produto.hpp"
 #include <cmath>
 using std::round;
 
@@ -28,4 +28,9 @@ float Produto::getPrecoProduto()
 {
     float valor = this->preco;
     return round(valor*100)/100;
+}
+
+Produto::~Produto()
+{
+    
 }

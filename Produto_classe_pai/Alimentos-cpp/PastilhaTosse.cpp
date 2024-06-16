@@ -1,4 +1,4 @@
-#include "..\Alimentos-hpp\PastilhaTosse.hpp"
+#include "../Alimentos-hpp/PastilhaTosse.hpp"
 
 Pastilha::Pastilha(int calorias, string descricaoprod, int quantidadeprod, float preco):
   Alimento(calorias,descricaoprod,quantidadeprod, preco)

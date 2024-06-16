@@ -1,6 +1,6 @@
 #ifndef PASTILHA
 #define PASTILHA
-#include "..\TiposdeProduto-hpp\alimento.hpp"
+#include "../TiposdeProduto-hpp/alimento.hpp"
 
 class Pastilha : public Alimento
 {

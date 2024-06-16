@@ -1,4 +1,4 @@
-#include "..\Cosmeticos-hpp\Condicionador.hpp"
+#include "../Cosmeticos-hpp/Condicionador.hpp"
 
 Condicionador::Condicionador(string lote, string descricaoprod, int quantidadeprod, float preco):
  Cosmetico(lote,descricaoprod, quantidadeprod,preco)
