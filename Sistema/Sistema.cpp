@@ -57,6 +57,23 @@ bool Sistema::removerDoEstoque(Item *item)
   }
 }
 
+void Sistema::verEstoque()
+{
+  try
+  {
+    for (auto &i : estoque)
+    {
+      cout << i->produto->InformacoesProduto() <<endl;
+    }
+
+  }
+  catch (const std::exception &e)
+  {
+    std::cerr << "Erro:" << e.what() << std::endl;
+    return;
+  }
+}
+
 bool Sistema::adicionarAoCarrinho(Item *item, Cliente *cliente)
 {
   try
@@ -135,7 +152,7 @@ void Sistema::iniciar()
     cin >> selecao;
     if (selecao = 1)
     {
-      cout << "Bem vindo à interface de Gerente.\n Aqui voce pode adicionar itens ao estoque." << endl;
+      cout << "Bem vindo à interface de Gerente.\nAqui voce pode adicionar itens ao estoque." << endl;
       while (true)
       {
         cout << "Qual tipo de produto gostaria de adicionar ao estoque?\n1.Alimento\n2.Cosmetico\n3.Medicamento" << endl;
@@ -148,12 +165,12 @@ void Sistema::iniciar()
           string descricaoprod;
           float preco;
 
-          cout << "Preencha os dados no seguinte formato: calorias descricao quantidade preco";
+          cout << "Preencha os dados no seguinte formato: calorias descricao quantidade preco " << endl;
           cin >> calorias >> descricaoprod >> quantidadeprod >> preco;
           Alimento temp(calorias, descricaoprod, quantidadeprod, preco);
 
           cout << "Voce esta adicionando o seguinte alimento ao estoque:" << endl;
-          temp.InformacoesProduto();
+          cout << temp.InformacoesProduto() << endl;
 
           int total;
           cout << "Quantas unidades deseja adicionar?" << endl;
@@ -170,12 +187,12 @@ void Sistema::iniciar()
           int quantidadeprod;
           float preco;
 
-          cout << "Preencha os dados no seguinte formato: lote descricao quantidade preco";
+          cout << "Preencha os dados no seguinte formato: lote descricao quantidade preco " << endl;
           cin >> lote >> descricaoprod >> quantidadeprod >> preco;
           Cosmetico temp(lote, descricaoprod, quantidadeprod, preco);
 
           cout << "Voce esta adicionando o seguinte cosmetico ao estoque:" << endl;
-          temp.InformacoesProduto();
+          cout << temp.InformacoesProduto() << endl;
 
           int total;
           cout << "Quantas unidades deseja adicionar?" << endl;
@@ -192,7 +209,7 @@ void Sistema::iniciar()
           int quantidadeprod;
           float preco;
 
-          cout << "Preencha os dados no seguinte formato: prescricao descricao quantidade preco";
+          cout << "Preencha os dados no seguinte formato: prescricao descricao quantidade preco " << endl;
           cin >> prescricao >> descricaoprod >> quantidadeprod >> preco;
 
           cout << "Qual tipo de medicamento gostaria de adicionar ao estoque?\n1.Analgesico \n2.Antibiotico \n3.Remedio controlado\n4.Anabolizante" << endl;
@@ -231,6 +248,6 @@ void Sistema::iniciar()
   }
 }
 
-Sistema::~Sistema(){
-  
+Sistema::~Sistema()
+{
 }

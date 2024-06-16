@@ -27,7 +27,6 @@ class Produto
         string getDescricaoProduto();
         int getQuantidadeProduto();
         float getPrecoProduto();
-        virtual string InformacoesProduto() = 0;
         virtual ~Produto();
 
 };

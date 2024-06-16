@@ -32,6 +32,7 @@ public:
 
     bool adicionarAoEstoque(Item*);
     bool removerDoEstoque(Item*);
+    void verEstoque();
 
     bool adicionarAoCarrinho(Item*, Cliente*);
 
