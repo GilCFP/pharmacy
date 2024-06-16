@@ -9,7 +9,7 @@ class Funcionario : public Pessoa
         int codigo;
 
     public:
-        Funcionario(string nome, int idade, int codigo) : Pessoa(nome, idade) {};
+        Funcionario(string nome, int idade, int codigo);
         int getCodigo();
 };
 #endif

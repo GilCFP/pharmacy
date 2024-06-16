@@ -7,6 +7,6 @@
 class Gerente : public Vendedor, public Farmaceutico
 {
     public:
-        Gerente(string nome, int idade, int codigo) : Farmaceutico(nome, idade, codigo), Vendedor() {};
+        Gerente(string nome, int idade, int codigo);
 };
 #endif

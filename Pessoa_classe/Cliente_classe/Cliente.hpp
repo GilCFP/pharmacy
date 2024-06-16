@@ -4,7 +4,7 @@
 #include<iostream>
 #include<string>
 #include<vector>
-#include"../Receita_classe/Receita.hpp"
+#include"../../Receita_classe/Receita.hpp"
 #include"../Pessoa.hpp"
 #include"Item.hpp"
 

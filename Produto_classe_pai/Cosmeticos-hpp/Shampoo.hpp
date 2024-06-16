@@ -1,7 +1,7 @@
 #ifndef SHAMPOO
 #define SHAMPOO
 
-#include "..\TiposdeProduto-hpp\cosmetico.hpp"
+#include "../TiposdeProduto-hpp/cosmetico.hpp"
 
 class Shampoo : public Cosmetico
 {

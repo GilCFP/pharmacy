@@ -8,7 +8,7 @@
 class Vendedor : public Funcionario
 {
     public:
-        Vendedor();
+        Vendedor(string nome, int idade, int codigo);
         float cobrar(vector<Item*> carrinho);
 };
 #endif

@@ -1,7 +1,7 @@
 #ifndef COSMETICO
 #define COSMETICO
 
-#include "..\Produto\produto.hpp"
+#include "../Produto/produto.hpp"
 
 #include <string>
 using std::string;

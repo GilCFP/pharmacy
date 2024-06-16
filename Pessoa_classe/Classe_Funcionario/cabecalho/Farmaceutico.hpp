@@ -4,7 +4,7 @@
 #include "Funcionario.hpp"
 #include "../../Cliente_classe/Cliente.hpp"
 #include "../../../Receita_classe/Receita.hpp"
-#include "../../../Medicamento_teste/medicamento.hpp"
+#include "../../../Produto_classe_pai/medicamento.hpp"
 #include <vector>
 
 class Farmaceutico : public Funcionario

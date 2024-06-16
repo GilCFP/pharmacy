@@ -1,7 +1,7 @@
 #ifndef ITEM
 #define ITEM
 
-#include "produto.hpp"
+#include "../../Produto_classe_pai/Produto/produto.hpp"
 
 class Item{
   public:

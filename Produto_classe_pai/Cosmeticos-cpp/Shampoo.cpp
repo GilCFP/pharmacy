@@ -1,4 +1,4 @@
-#include "..\Cosmeticos-hpp\Shampoo.hpp"
+#include "../Cosmeticos-hpp/Shampoo.hpp"
 
 Shampoo::Shampoo(string lote, string descricaoprod, int quantidadeprod, float preco):
  Cosmetico(lote,descricaoprod, quantidadeprod,preco)

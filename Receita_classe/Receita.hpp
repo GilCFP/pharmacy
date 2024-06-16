@@ -3,7 +3,7 @@
 
 #include<iostream>
 #include<string>
-#include"Medicamento.hpp"
+#include"../Produto_classe_pai/medicamento.hpp"
 
 using std::string;
 

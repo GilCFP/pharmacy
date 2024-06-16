@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
-#include"Receita.hpp"
-#include"Medicamento.hpp"
+#include "Receita.hpp"
+
 
 using std::string;
 
@@ -21,7 +21,7 @@ void Receita::associarMed(Medicamento* obj)
 string Receita::getNomeRemedio()
 {
     if (ponteiro) {
-           return ponteiro->getNome();
+           return ponteiro->getDescricaoProduto();
         } else {
             return "A receita nao esta associada a nenhum medicamento."; 
         }

@@ -141,7 +141,8 @@ void Sistema::iniciar()
         cout << "Qual tipo de produto gostaria de adicionar ao estoque?\n1.Alimento\n2.Cosmetico\n3.Medicamento" << endl;
         cin >> selecao;
 
-        if(selecao == 1){
+        if (selecao == 1)
+        {
 
           int calorias, quantidadeprod;
           string descricaoprod;
@@ -151,20 +152,21 @@ void Sistema::iniciar()
           cin >> calorias >> descricaoprod >> quantidadeprod >> preco;
           Alimento temp(calorias, descricaoprod, quantidadeprod, preco);
 
-          cout << "Voce esta adicionando o seguinte alimento ao estoque:"<<endl;
+          cout << "Voce esta adicionando o seguinte alimento ao estoque:" << endl;
           temp.InformacoesProduto();
 
           int total;
-          cout <<"Quantas unidades deseja adicionar?" << endl;
-          cin>> total;
+          cout << "Quantas unidades deseja adicionar?" << endl;
+          cin >> total;
 
-          Item item(&temp,total);
-          estoque.push_back(&item);
+          Item item(&temp, total);
+          adicionarAoEstoque(&item);
         }
 
-        if(selecao == 2){
+        if (selecao == 2)
+        {
 
-          string lote,descricaoprod;
+          string lote, descricaoprod;
           int quantidadeprod;
           float preco;
 
@@ -172,18 +174,19 @@ void Sistema::iniciar()
           cin >> lote >> descricaoprod >> quantidadeprod >> preco;
           Cosmetico temp(lote, descricaoprod, quantidadeprod, preco);
 
-          cout << "Voce esta adicionando o seguinte cosmetico ao estoque:"<<endl;
+          cout << "Voce esta adicionando o seguinte cosmetico ao estoque:" << endl;
           temp.InformacoesProduto();
 
           int total;
-          cout <<"Quantas unidades deseja adicionar?" << endl;
-          cin>> total;
+          cout << "Quantas unidades deseja adicionar?" << endl;
+          cin >> total;
 
-          Item item(&temp,total);
-          estoque.push_back(&item);
+          Item item(&temp, total);
+          adicionarAoEstoque(&item);
         }
 
-        if(selecao == 3){
+        if (selecao == 3)
+        {
 
           string prescricao, descricaoprod;
           int quantidadeprod;
@@ -192,31 +195,42 @@ void Sistema::iniciar()
           cout << "Preencha os dados no seguinte formato: prescricao descricao quantidade preco";
           cin >> prescricao >> descricaoprod >> quantidadeprod >> preco;
 
-          cout << "Qual tipo de medicamento gostaria de adicionar ao estoque?\n1.Analgesico \n2.Antibiotico \n3.Remedio controlado\n4.Anabolizante"<< endl;
+          cout << "Qual tipo de medicamento gostaria de adicionar ao estoque?\n1.Analgesico \n2.Antibiotico \n3.Remedio controlado\n4.Anabolizante" << endl;
           cin >> selecao;
-          Medicamento*temp;
+          Medicamento *temp;
 
-          if(selecao == 1){
-            temp = &Analgesico(prescricao, false, descricaoprod, quantidadeprod, preco);
+          if (selecao == 1)
+          {
+            temp = new Analgesico(prescricao, false, descricaoprod, quantidadeprod, preco);
           }
-          if(selecao == 2){
-            temp = &Antibiotico(prescricao, true, descricaoprod, quantidadeprod, preco);
+          else if (selecao == 2)
+          {
+            temp = new Antibiotico(prescricao, true, descricaoprod, quantidadeprod, preco);
           }
-          if(selecao == 3){
-            temp = &Controlado(prescricao, true, descricaoprod, quantidadeprod, preco);
+          else if (selecao == 3)
+          {
+            temp = new Controlado(prescricao, true, descricaoprod, quantidadeprod, preco);
           }
-          if(selecao == 4){
-            Agulha agulha("Agulha para anabolizante", quantidadeprod, 0);
-            temp = &Anabolizante(prescricao, false, descricaoprod, quantidadeprod, preco, &agulha);
+          else if (selecao == 4)
+          {
+            Agulha *agulha = new Agulha("Agulha para anabolizante", quantidadeprod, 0);
+            temp = new Anabolizante(prescricao, false, descricaoprod, quantidadeprod, preco, agulha);
           }
 
-          cout << "Voce esta adicionando o seguinte alimento ao estoque:"<<endl;
-          temp->InformacoesProduto();
+          if (temp != nullptr)
+          {
+            cout << "Voce esta adicionando o seguinte medicamento ao estoque:" << endl;
+            temp->InformacoesProduto();
 
-          Item item(temp,quantidadeprod);
-          estoque.push_back(&item);
+            Item *item = new Item(temp, quantidadeprod);
+            adicionarAoEstoque(item);
+          }
         }
       }
     }
   }
+}
+
+Sistema::~Sistema(){
+  
 }
