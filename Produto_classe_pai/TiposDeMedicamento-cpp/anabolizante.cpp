@@ -33,6 +33,12 @@ Medicamento(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco)
 
 }
 
+Anabolizante::~Anabolizante(){
+
+    cout << "Destruindo Anabolizante: " << Produto::getDescricaoProduto();
+
+}
+
 string Anabolizante::InformacoesProduto(){
 
     std::ostringstream saida;

@@ -4,10 +4,17 @@
 #include <iostream>
 
 using std::string;
+using std::cout;
 
 Antibiotico::Antibiotico(string prescricao, bool precisaDeReceita, string descricaoprod, int quantidadeprod, float preco):
 Medicamento(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco)
 {
+
+}
+
+Antibiotico::~Antibiotico(){
+
+    cout << "Destruindo Antibiotico: " << Produto::getDescricaoProduto();
 
 }
 

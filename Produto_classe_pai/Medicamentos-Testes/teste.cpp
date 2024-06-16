@@ -1,7 +1,8 @@
-// #define CATCH_CONFIG_MAIN
-// #include "Catch2.hpp"
-// #include <iostream>
 
+#define CATCH_CONFIG_MAIN
+#include "Catch2.hpp"
+#include <iostream>
+#include <vector>
 
 // #include "../medicamento.hpp"
 
@@ -12,8 +13,9 @@
 // #include "../tiposDeMedicamento-hpp/analgesico.hpp"
 // #include "../tiposDeMedicamento-hpp/anabolizante.hpp"
 
-// using std::cout;
-// using std::endl;
+using std::cout;
+using std::endl;
+using std::vector;
 
 // TEST_CASE("1. DESCRICOES DOS PRODUTOS"){
 
@@ -143,4 +145,29 @@
 
 //     Anabolizante * durateston = new Anabolizante("10mg / dia", true, "Durateston Super", 10, 150.98, agulhas);
 
-// }
+TEST_CASE("8. TESTE DESTRUTOR"){
+
+    Agulha* agulhas = new Agulha("Agulinx", 20, 2.90);
+
+    Anabolizante * durateston = new Anabolizante("10mg / dia", true, "Durateston Super", 20, 150.98, agulhas);
+    Antibiotico * penicilina = new Antibiotico("20mg / dia", false, "Penicilinux", 30, 31.79);
+    Analgesico * ibuprofeno = new Analgesico("20mg / dia", false, "Ibupril", 30, 20.50);
+    Controlado * ritalina = new Controlado("10mg / dia", true, "Ritanel", 20, 83.71);
+
+    vector<Produto*> produtos;
+
+    produtos.push_back(agulhas);
+    produtos.push_back(durateston);
+    produtos.push_back(penicilina);
+    produtos.push_back(ibuprofeno);
+    produtos.push_back(ritalina);
+
+    for(auto &produto : produtos){
+
+        INFO("Quantidade de elementos: " << produtos.size());
+        delete produto;
+
+    }
+
+}
+

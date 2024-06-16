@@ -4,6 +4,7 @@
 #include <bits/stdc++.h>
 
 using std::string;
+using std::cout;
 
 Agulha::Agulha():
 Produto()
@@ -14,6 +15,12 @@ Produto()
 Agulha::Agulha(string descricaoprod, int quantidadeprod, float preco):
 Produto(descricaoprod, quantidadeprod, preco)
 {
+
+}
+
+Agulha::~Agulha(){
+
+    cout << "Destruindo Agulha: " << Produto::getDescricaoProduto();
 
 }
 
