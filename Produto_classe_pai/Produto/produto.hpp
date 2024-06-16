@@ -23,10 +23,11 @@ class Produto
 
         Produto();
         Produto(string descricaoprod, int quantidadeprod, float preco);
+        virtual string InformacoesProduto()=0;
         string getDescricaoProduto();
         int getQuantidadeProduto();
         float getPrecoProduto();
-        virtual string InformacoesProduto() = 0;
+       
 };
 
 #endif
