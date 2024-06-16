@@ -1,12 +1,11 @@
 #include "../cabecalho/Vendedor.hpp"
 #include <vector>
 
-float Vendedor::cobrar(vector<Item> carrinho)
+float Vendedor::cobrar(vector<Item*> carrinho)
 {
     float precoTotal = 0;
-    for(int i = 0; i < carrinho.size(); i++)
-    {
-        precoTotal += carrinho[i].*produto->getPreco() * carrinho[i].getQuantidade();
+    for (auto &item : carrinho){
+        precoTotal += item->getTotal();
     }
     return precoTotal;
 }

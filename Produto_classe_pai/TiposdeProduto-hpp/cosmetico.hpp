@@ -11,7 +11,7 @@ class Cosmetico : public Produto
     public:
         string lote;
         Cosmetico(string lote, string descricaoprod, int quantidadeprod, float preco);
-        virtual string InformacoesProduto()=0;
+        virtual string InformacoesProduto();
         virtual ~Cosmetico();
 };
 

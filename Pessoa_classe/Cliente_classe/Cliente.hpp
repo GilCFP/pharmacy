@@ -6,7 +6,8 @@
 #include<vector>
 #include"../Receita_classe/Receita.hpp"
 #include"../Pessoa.hpp"
-#include"../Produto_classe_pai/Produto/produto.hpp"
+#include"Item.hpp"
+
 
 using std::string;
 using std::vector;
@@ -16,12 +17,13 @@ class Cliente : public Pessoa
 public:
 
    vector<Receita> receitas;
-   vector<Produto> carrinho;
+   vector<Item*> carrinho;
 
 
 public:
     Cliente(string nome, int idade);
-    void addCompraCarrinho(Produto produto);
+    bool addCompraCarrinho(Item* item);
+    bool removeCompraCarrinho(Item* item);
     void addReceita(Receita Receita);
     void verReceitas();
     void verCompras();

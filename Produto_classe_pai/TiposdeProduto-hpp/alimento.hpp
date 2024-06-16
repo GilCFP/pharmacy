@@ -11,8 +11,9 @@ class Alimento : public Produto
     public:
         int calorias;
         Alimento(int calorias, string descricaoprod, int quantidadeprod, float preco);
-        virtual string InformacoesProduto()=0; 
-        virtual ~Alimento();  
+        virtual string InformacoesProduto();
+        virtual ~Alimento();
+
 };
 
 #endif
