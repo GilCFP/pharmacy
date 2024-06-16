@@ -16,6 +16,7 @@ class Anabolizante : public Medicamento {
     public:
 
         Anabolizante(string prescricao, bool precisaDeReceita, string descricaoprod, int quantidadeprod, float preco, Agulha *agulha);
+        ~Anabolizante();
         string InformacoesProduto() override;
 };
 

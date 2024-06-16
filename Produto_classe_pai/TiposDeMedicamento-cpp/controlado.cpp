@@ -24,6 +24,12 @@ Medicamento(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco)
 
 }
 
+Controlado::~Controlado(){
+
+    cout << "Destruindo Controlado: " << Produto::getDescricaoProduto();
+
+}
+
 string Controlado::InformacoesProduto(){
 
     std::ostringstream saida;

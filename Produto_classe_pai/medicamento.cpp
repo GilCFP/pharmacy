@@ -12,6 +12,11 @@ Produto(descricaoprod, quantidadeprod, preco)
 
 }
 
+Medicamento::~Medicamento(){
+
+
+}
+
 string Medicamento::getPrescricao() {
 
     return this->prescricao;
