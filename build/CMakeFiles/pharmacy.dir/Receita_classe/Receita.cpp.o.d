@@ -1,5 +1,5 @@
 CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o: \
- /mnt/c/Users/Germano\ Mark1/OneDrive\ -\ Universidade\ Federal\ de\ Minas\ Gerais/Estudos/PDS2/trabalho\ farmacia\ 2/pharmacy/Receita_classe/Receita.cpp \
+ /mnt/c/Users/João/OneDrive/João\ Pedro/Universidade/UFMG\ -\ Atividades/2º\ Período/PDS2/Clones/outra/pharmacy/Receita_classe/Receita.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -144,9 +144,9 @@ CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /mnt/c/Users/Germano\ Mark1/OneDrive\ -\ Universidade\ Federal\ de\ Minas\ Gerais/Estudos/PDS2/trabalho\ farmacia\ 2/pharmacy/Receita_classe/Receita.hpp \
- /mnt/c/Users/Germano\ Mark1/OneDrive\ -\ Universidade\ Federal\ de\ Minas\ Gerais/Estudos/PDS2/trabalho\ farmacia\ 2/pharmacy/Receita_classe/../Produto_classe_pai/medicamento.hpp \
- /mnt/c/Users/Germano\ Mark1/OneDrive\ -\ Universidade\ Federal\ de\ Minas\ Gerais/Estudos/PDS2/trabalho\ farmacia\ 2/pharmacy/Receita_classe/../Produto_classe_pai/Produto/produto.hpp \
+ /mnt/c/Users/João/OneDrive/João\ Pedro/Universidade/UFMG\ -\ Atividades/2º\ Período/PDS2/Clones/outra/pharmacy/Receita_classe/Receita.hpp \
+ /mnt/c/Users/João/OneDrive/João\ Pedro/Universidade/UFMG\ -\ Atividades/2º\ Período/PDS2/Clones/outra/pharmacy/Receita_classe/../Produto_classe_pai/medicamento.hpp \
+ /mnt/c/Users/João/OneDrive/João\ Pedro/Universidade/UFMG\ -\ Atividades/2º\ Período/PDS2/Clones/outra/pharmacy/Receita_classe/../Produto_classe_pai/Produto/produto.hpp \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \

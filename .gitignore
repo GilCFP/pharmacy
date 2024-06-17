@@ -2,3 +2,7 @@
 *.o
 *.json
 *.vscode
+build
+*.d
+*.ts
+*.cpp.o.d
