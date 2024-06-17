@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool Farmaceutico::verificarReceita(vector<Receita> receitas, vector<Medicamento> medicamentos)
+bool Farmaceutico::verificarReceita(vector<Receita> receitas, vector<Produto> medicamentos)
 {
     for (int i = 0; i < receitas.size(); i++)
     {

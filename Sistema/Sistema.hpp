@@ -24,14 +24,16 @@ private:
     Vendedor *vendedor;
     Farmaceutico *farmaceutico;
     Gerente *gerente;
-    int disponibilidadeItem(Item*);
+    int disponibilidadeItem(string);
 
 
 public:
     Sistema(Vendedor *vendedor, Farmaceutico *farmaceutico, Gerente *gerente);
     ~Sistema();
 
-    void iniciar();
+    void iniciar(Gerente*);
+    void comprar(Cliente*);
+    int indexItem(string descricao);
 
     bool adicionarAoEstoque(Item*);
     bool removerDoEstoque(Item*);

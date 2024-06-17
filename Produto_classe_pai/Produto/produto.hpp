@@ -21,6 +21,7 @@ class Produto
 
     public:
 
+        bool precisaDeReceita;
         Produto();
         Produto(string descricaoprod, int quantidadeprod, float preco);
         virtual string InformacoesProduto();

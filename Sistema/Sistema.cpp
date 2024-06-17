@@ -62,13 +62,12 @@ void Sistema::verEstoque()
   try
   {
     int l = 0;
-    for (Item* i : estoque)
+    for (Item *i : estoque)
     {
       cout << i << endl;
-      cout << l << i->produto->InformacoesProduto() <<endl;
+      cout << l << i->produto->InformacoesProduto() << endl;
       l++;
     }
-
   }
   catch (const std::exception &e)
   {
@@ -104,16 +103,30 @@ bool Sistema::removerDoCarrinho(Item *item, Cliente *cliente)
   }
 }
 
-int Sistema::disponibilidadeItem(Item *item)
+int Sistema::disponibilidadeItem(string descricao)
 {
   for (auto &i : estoque)
   {
-    if (i->produto == item->produto)
+    if (i->produto->getDescricaoProduto() == descricao)
     {
       return i->total;
     }
   }
   return 0;
+}
+
+int Sistema::indexItem(string descricao)
+{
+  int index = 0;
+  for (auto &i : estoque)
+  {
+    if (i->produto->getDescricaoProduto() == descricao)
+    {
+      return index;
+    }
+    index++;
+  }
+  return -1;
 }
 
 bool Sistema::olharCarrinho(Cliente *cliente)
@@ -146,12 +159,12 @@ bool finalizarCompra(Cliente *cliente, Vendedor *vendedor)
   }
 }
 
-void Sistema::iniciar()
+void Sistema::iniciar(Gerente *gerente)
 {
   while (true)
   {
     int selecao;
-    cout << "Selecione o seu perfil\n1.Gerente\n2.Cliente" << endl;
+    cout << "Selecione o seu perfil\n1.Gerente" << endl;
     cin >> selecao;
     if (selecao == 1)
     {
@@ -160,7 +173,7 @@ void Sistema::iniciar()
       {
         cout << "Qual tipo de produto gostaria de adicionar ao estoque?\n1.Alimento\n2.Cosmetico\n3.Medicamento" << endl;
         cin >> selecao;
-        if(selecao == 0)
+        if (selecao == 0)
         {
           break;
         }
@@ -262,6 +275,64 @@ void Sistema::iniciar()
       }
     }
   }
+}
+
+void Sistema::comprar(Cliente *cliente)
+{
+  cout << "Bem vindo à farmácia inter.\nAqui voce pode adicionar itens ao seu carrinho" << endl;
+  while (true)
+  {
+    int selecao;
+    cout << "Qual tipo de produto gostaria de adicionar ao carrinho?\n1.Alimento\n2.Cosmetico\n3.Medicamento" << endl;
+    cin >> selecao;
+    if (selecao == 0)
+    {
+      break;
+    }
+    string descricao;
+    cout << "Digite a descricao do produto desejado:" << endl;
+    cin >> descricao;
+    int disponivel = disponibilidadeItem(descricao);
+    if (disponivel == 0)
+    {
+      cout << "Não possuimos esse produto disponível" << endl;
+    }
+    else
+    {
+      int qtdDesejada;
+      cout << "Possuimos " << disponivel << " items disponíveis, quantos vai querer?" << endl;
+      cin >> qtdDesejada;
+      if (qtdDesejada > disponivel)
+      {
+        cout << "Não possuímos a quantidade desejada :(" << endl;
+      }
+      Item *itemSelecionado = estoque[indexItem(descricao)];
+      Produto *produtoSelecionado = itemSelecionado->produto;
+      if (selecao != 3)
+      {
+        adicionarAoCarrinho(new Item(new Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()), qtdDesejada), cliente);
+      }
+      else
+      {
+        if (produtoSelecionado->precisaDeReceita)
+        {
+          vector<Produto> medicamento;
+          medicamento.push_back(Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()));
+
+          if (farmaceutico->verificarReceita(cliente->receitas, medicamento))
+          {
+            adicionarAoCarrinho(new Item(new Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()), qtdDesejada), cliente);
+          }
+          else
+          {
+            cout << "Voce nao possui receita para o remédio desejado :(" << endl;
+          }
+        }
+      }
+    }
+    cliente->verCompras();
+  }
+  finalizarCompra(cliente,vendedor);
 }
 
 Sistema::~Sistema()
