@@ -143,7 +143,7 @@ bool Sistema::olharCarrinho(Cliente *cliente)
   }
 }
 
-bool finalizarCompra(Cliente *cliente, Vendedor *vendedor)
+bool Sistema::finalizarCompra(Cliente* cliente, Vendedor* vendedor)
 {
   try
   {
@@ -166,6 +166,9 @@ void Sistema::iniciar(Gerente *gerente)
     int selecao;
     cout << "Selecione o seu perfil\n1.Gerente" << endl;
     cin >> selecao;
+    if (selecao == 0){
+      break;
+    }
     if (selecao == 1)
     {
       cout << "Bem vindo à interface de Gerente.\nAqui voce pode adicionar itens ao estoque." << endl;
@@ -332,7 +335,7 @@ void Sistema::comprar(Cliente *cliente)
     }
     cliente->verCompras();
   }
-  finalizarCompra(cliente,vendedor);
+  this->finalizarCompra(cliente,this->vendedor);
 }
 
 Sistema::~Sistema()
