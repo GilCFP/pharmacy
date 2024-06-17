@@ -1,16 +1,14 @@
-#include<iostream>
-#include<string>
-#include<vector>
-#include"Cliente.hpp"
+#include <iostream>
+#include <string>
+#include <vector>
+#include "Cliente.hpp"
 
-
-using std::string;
 using std::cout;
 using std::endl;
+using std::string;
 
-Cliente::Cliente(string nome, int idade):Pessoa(nome, idade)
+Cliente::Cliente(string nome, int idade) : Pessoa(nome, idade)
 {
-
 }
 
 string Cliente::pegarNome()
@@ -28,29 +26,7 @@ void Cliente::addReceita(Receita receita)
     this->receitas.push_back(receita);
 }
 
-bool Cliente::addCompraCarrinho(Item* item)
-{
-  try
-  {
-    for (auto &i : carrinho)
-    {
-      if (i->produto == item->produto)
-      {
-        i->total += item->total;
-        return true;
-      }
-    }
-    this->carrinho.push_back(item);
-    return true;
-  }
-  catch (const std::exception &e)
-  {
-    std::cerr << "Erro:" << e.what() << std::endl;
-    return false;
-  }
-}
-
-bool Cliente::removeCompraCarrinho(Item* item)
+bool Cliente::addCompraCarrinho(Item *item)
 {
     try
     {
@@ -58,40 +34,75 @@ bool Cliente::removeCompraCarrinho(Item* item)
         {
             if (i->produto == item->produto)
             {
-                if(i->total < item->total)
-                {
-                    return false;
-                }else
-                    i->total -= item->total;
-                    return true;
-
+                i->total += item->total;
+                return true;
             }
         }
-        return false;
+        this->carrinho.push_back(item);
+        return true;
     }
-    catch(const std::exception &e)
+    catch (const std::exception &e)
     {
         std::cerr << "Erro:" << e.what() << std::endl;
         return false;
     }
-
 }
 
+bool Cliente::removeCompraCarrinho(int index, int quantidade)
+{
+    try
+    {
+        // Impossivel realizar operação
+        if (carrinho[index]->total < quantidade)
+        {
+            return false;
+        }
+
+        // Deleta o item do carrinho
+        if (carrinho[index]->total = quantidade)
+        {
+            delete carrinho[index];
+            carrinho.erase(carrinho.begin() + index);
+            return true;
+        }
+
+        // Decrementa o total de item
+        carrinho[index]->total = carrinho[index]->total - quantidade;
+        return true;
+    }
+    catch (const std::exception &e)
+    {
+        std::cerr << "Erro:" << e.what() << std::endl;
+        return false;
+    }
+}
 
 void Cliente::verCompras()
 {
-    for(auto &item : carrinho)
+    for (auto &item : carrinho)
     {
-        cout << item->produto->getDescricaoProduto() << ": " <<item->getTotal()<< endl;
-
+        cout << item->produto->getDescricaoProduto() << ": " << item->getTotal() << endl;
     }
 }
 
 void Cliente::verReceitas()
 {
-    for(auto& receita : receitas)
+    for (auto &receita : receitas)
     {
         cout << receita.pegarDescricao() << endl;
     }
 }
 
+int Cliente::indexItem(string descricao)
+{
+    int index = 0;
+    for (auto &i : carrinho)
+    {
+        if (i->produto->getDescricaoProduto() == descricao)
+        {
+            return index;
+        }
+        index++;
+    }
+    return -1;
+}

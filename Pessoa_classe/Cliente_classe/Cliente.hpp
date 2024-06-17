@@ -23,7 +23,8 @@ public:
 public:
     Cliente(string nome, int idade);
     bool addCompraCarrinho(Item* item);
-    bool removeCompraCarrinho(Item* item);
+    bool removeCompraCarrinho(int index, int quantidade);
+    int indexItem(string descricao);
     void addReceita(Receita Receita);
     void verReceitas();
     void verCompras();

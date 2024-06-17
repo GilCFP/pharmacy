@@ -18,14 +18,16 @@ bool Sistema::adicionarAoEstoque(Item *item)
 {
   try
   {
-    // for (auto i : estoque)
-    // {
-    //   if (i->produto == item->produto)
-    //   {
-    //     i->total += item->total;
-    //     return true;
-    //   }
-    // }
+    cout << "Voce está adicionando " << item->total << " unidades do seguinte item ao estoque:\n"
+         << item->produto->InformacoesProduto() << endl;
+    for (auto &i : estoque)
+    {
+      if (i->produto == item->produto)
+      {
+        i->total += item->total;
+        return true;
+      }
+    }
     this->estoque.push_back(item);
     return true;
   }
@@ -36,19 +38,27 @@ bool Sistema::adicionarAoEstoque(Item *item)
   }
 }
 
-bool Sistema::removerDoEstoque(Item *item)
+bool Sistema::removerDoEstoque(int index, int quantidade)
 {
   try
   {
-    for (auto &i : estoque)
+    // Impossivel realizar operação
+    if (estoque[index]->total < quantidade)
     {
-      if (i->produto == item->produto && item->total < i->total)
-      {
-        i->total -= item->total;
-        return true;
-      }
+      return false;
     }
-    return false;
+
+    // Deleta o item do estoque
+    if (estoque[index]->total = quantidade)
+    {
+      delete estoque[index];
+      estoque.erase(estoque.begin() + index);
+      return true;
+    }
+
+    // Decrementa o total de item
+    estoque[index]->total = estoque[index]->total - quantidade;
+    return true;
   }
   catch (const std::exception &e)
   {
@@ -90,11 +100,11 @@ bool Sistema::adicionarAoCarrinho(Item *item, Cliente *cliente)
   }
 }
 
-bool Sistema::removerDoCarrinho(Item *item, Cliente *cliente)
+bool Sistema::removerDoCarrinho(int index, int quantidade, Cliente *cliente)
 {
   try
   {
-    return cliente->removeCompraCarrinho(item);
+    return cliente->removeCompraCarrinho( index, quantidade);
   }
   catch (const std::exception &e)
   {
@@ -103,16 +113,9 @@ bool Sistema::removerDoCarrinho(Item *item, Cliente *cliente)
   }
 }
 
-int Sistema::disponibilidadeItem(string descricao)
+int Sistema::disponibilidadeItem(int index)
 {
-  for (auto &i : estoque)
-  {
-    if (i->produto->getDescricaoProduto() == descricao)
-    {
-      return i->total;
-    }
-  }
-  return 0;
+  return estoque[index]->total;
 }
 
 int Sistema::indexItem(string descricao)
@@ -143,7 +146,7 @@ bool Sistema::olharCarrinho(Cliente *cliente)
   }
 }
 
-bool Sistema::finalizarCompra(Cliente* cliente, Vendedor* vendedor)
+bool Sistema::finalizarCompra(Cliente *cliente, Vendedor *vendedor)
 {
   try
   {
@@ -161,120 +164,188 @@ bool Sistema::finalizarCompra(Cliente* cliente, Vendedor* vendedor)
 
 void Sistema::iniciar(Gerente *gerente)
 {
+  // Loop para manter as opearações
   while (true)
   {
+    // Variável para marcar a seleção no menu
     int selecao;
+
     cout << "Selecione o seu perfil\n1.Gerente" << endl;
     cin >> selecao;
-    if (selecao == 0){
+    if (selecao == 0)
+    {
       break;
     }
     if (selecao == 1)
     {
-      cout << "Bem vindo à interface de Gerente.\nAqui voce pode adicionar itens ao estoque." << endl;
+      cout << "Bem vindo à interface de Gerente.\nAqui voce pode adicionar ou remover itens do estoque." << endl;
       while (true)
       {
-        cout << "Qual tipo de produto gostaria de adicionar ao estoque?\n1.Alimento\n2.Cosmetico\n3.Medicamento" << endl;
+        cout << "Digite 1 para adicionar itens e 2 para remover itens" << endl;
         cin >> selecao;
-        if (selecao == 0)
-        {
-          break;
-        }
 
         if (selecao == 1)
         {
+          while (true)
+          {
+            // Menu tipos de produtos
+            cout << "Qual tipo de produto gostaria de adicionar ao estoque?\n1.Alimento\n2.Cosmetico\n3.Medicamento" << endl;
+            cin >> selecao;
 
-          int calorias, quantidadeprod;
-          string descricaoprod;
-          float preco;
+            // Abortar operações
+            if (selecao == 0)
+            {
+              break;
+            }
 
-          cout << "Preencha os dados no seguinte formato: calorias descricao quantidade preco " << endl;
-          cin >> calorias >> descricaoprod >> quantidadeprod >> preco;
-          Alimento temp(calorias, descricaoprod, quantidadeprod, preco);
+            // Adiciona um alimento ao estoque
+            if (selecao == 1)
+            {
 
-          cout << "Voce esta adicionando o seguinte alimento ao estoque:" << endl;
-          cout << temp.InformacoesProduto() << endl;
+              int calorias, quantidadeprod, total;
+              string descricaoprod;
+              float preco;
 
-          int total;
-          cout << "Quantas unidades deseja adicionar?" << endl;
-          cin >> total;
+              while (true)
+              {
+                try
+                {
+                  cout << "Preencha os dados no seguinte formato: calorias descricao unidades-por-item preco" << endl;
+                  cin >> calorias >> descricaoprod >> quantidadeprod >> preco;
 
-          Item item(&temp, total);
-          adicionarAoEstoque(new Item(new Alimento(calorias, descricaoprod, quantidadeprod, preco), total));
+                  cout << "Quantos itens deseja adicionar?" << endl;
+                  cin >> total;
+
+                  break;
+                }
+                catch (const std::exception &e)
+                {
+                  cout << "Os dados informados são incompatíveis com os dados solicitados, tente novamente" << endl;
+                }
+              }
+              adicionarAoEstoque(new Item(new Alimento(calorias, descricaoprod, quantidadeprod, preco), total));
+            }
+
+            // Adiciona um cosmético ao estoque
+            if (selecao == 2)
+            {
+
+              string lote, descricaoprod;
+              int quantidadeprod, total;
+              float preco;
+
+              while (true)
+              {
+                try
+                {
+                  cout << "Preencha os dados no seguinte formato: lote descricao preco " << endl;
+                  cin >> lote >> descricaoprod >> preco;
+
+                  cout << "Quantas caixas deseja adicionar?" << endl;
+                  cin >> total;
+
+                  break;
+                }
+                catch (const std::exception &e)
+                {
+                  cout << "Os dados informados são incompatíveis com os dados solicitados, tente novamente" << endl;
+                }
+              }
+              adicionarAoEstoque(new Item(new Cosmetico(lote, descricaoprod, quantidadeprod, preco), total));
+            }
+
+            // Adiciona um medicamento ao estoque
+            if (selecao == 3)
+            {
+
+              string prescricao, descricaoprod;
+              int quantidadeprod, total;
+              float preco;
+              while (true)
+              {
+                try
+                {
+                  cout << "Qual tipo de medicamento gostaria de adicionar ao estoque?\n1.Analgesico \n2.Antibiotico \n3.Remedio controlado\n4.Anabolizante" << endl;
+                  cin >> selecao;
+
+                  cout << "Preencha os dados no seguinte formato: prescricao descricao unidades-por-caixa preco " << endl;
+                  cin >> prescricao >> descricaoprod >> quantidadeprod >> preco;
+
+                  cout << "Quantas caixas deseja adicionar?" << endl;
+                  cin >> total;
+
+                  break;
+                }
+                catch (const std::exception &e)
+                {
+                  cout << "Os dados informados são incompatíveis com os dados solicitados, tente novamente" << endl;
+                }
+              }
+              // Instancia um novo Item com um novo Analgésico
+              if (selecao == 1)
+              {
+                adicionarAoEstoque(new Item(new Analgesico(prescricao, false, descricaoprod, quantidadeprod, preco), total));
+              }
+
+              // Instancia um novo Item com um novo Antibiótico
+              if (selecao == 2)
+              {
+                adicionarAoEstoque(new Item(new Antibiotico(prescricao, true, descricaoprod, quantidadeprod, preco), total));
+              }
+
+              // Instancia um novo Item com um novo remédio Controlado
+              if (selecao == 3)
+              {
+                adicionarAoEstoque(new Item(new Controlado(prescricao, true, descricaoprod, quantidadeprod, preco), total));
+              }
+
+              // Instancia um novo Item com um novo Anabolizante
+              if (selecao == 4)
+              {
+                Agulha agulha("Agulha para anabolizante", quantidadeprod, 0);
+                Anabolizante temp(prescricao, false, descricaoprod, quantidadeprod, preco, &agulha);
+
+                adicionarAoEstoque(new Item(new Anabolizante(prescricao, false, descricaoprod, quantidadeprod, preco, &agulha), total));
+              }
+            }
+            this->verEstoque();
+          }
         }
 
         if (selecao == 2)
         {
-
-          string lote, descricaoprod;
-          int quantidadeprod;
-          float preco;
-
-          cout << "Preencha os dados no seguinte formato: lote descricao quantidade preco " << endl;
-          cin >> lote >> descricaoprod >> quantidadeprod >> preco;
-          Cosmetico temp(lote, descricaoprod, quantidadeprod, preco);
-
-          cout << "Voce esta adicionando o seguinte cosmetico ao estoque:" << endl;
-          cout << temp.InformacoesProduto() << endl;
-
-          int total;
-          cout << "Quantas unidades deseja adicionar?" << endl;
-          cin >> total;
-
-          Item item(&temp, total);
-          adicionarAoEstoque(new Item(new Cosmetico(lote, descricaoprod, quantidadeprod, preco), total));
-        }
-
-        if (selecao == 3)
-        {
-
-          string prescricao, descricaoprod;
-          int quantidadeprod;
-          float preco;
-
-          cout << "Qual tipo de medicamento gostaria de adicionar ao estoque?\n1.Analgesico \n2.Antibiotico \n3.Remedio controlado\n4.Anabolizante" << endl;
-          cin >> selecao;
-
-          cout << "Preencha os dados no seguinte formato: prescricao descricao quantidade preco " << endl;
-          cin >> prescricao >> descricaoprod >> quantidadeprod >> preco;
-
-          // Medicamento *temp;
-
-          if (selecao == 1)
+          string descricao;
+          cout << "Digite a descrição do produto que deseja remover do estoque" << endl;
+          cin >> descricao;
+          int index = indexItem(descricao);
+          if (index == -1)
           {
-            // Analgesico temp(prescricao, false, descricaoprod, quantidadeprod, preco);
-            // cout << "Voce esta adicionando o seguinte medicamento ao estoque:" << endl;
-            // temp.InformacoesProduto();
-            // Item item(&temp, quantidadeprod);
-            adicionarAoEstoque(new Item(new Analgesico(prescricao, false, descricaoprod, quantidadeprod, preco), quantidadeprod));
+            cout << "Esse produto não existe no estoque, tente com outra descricao" << endl;
           }
-          else if (selecao == 2)
+          else
           {
-            // Antibiotico temp(prescricao, true, descricaoprod, quantidadeprod, preco);
-            // cout << "Voce esta adicionando o seguinte medicamento ao estoque:" << endl;
-            // temp.InformacoesProduto();
-            // Item item(&temp, quantidadeprod);
-            adicionarAoEstoque(new Item(new Antibiotico(prescricao, true, descricaoprod, quantidadeprod, preco), quantidadeprod));
-          }
-          else if (selecao == 3)
-          {
-            // Controlado temp(prescricao, true, descricaoprod, quantidadeprod, preco);
-            // cout << "Voce esta adicionando o seguinte medicamento ao estoque:" << endl;
-            // temp.InformacoesProduto();
-            // Item item(&temp, quantidadeprod);
-            adicionarAoEstoque(new Item(new Controlado(prescricao, true, descricaoprod, quantidadeprod, preco), quantidadeprod));
-          }
-          else if (selecao == 4)
-          {
-            Agulha agulha("Agulha para anabolizante", quantidadeprod, 0);
-            Anabolizante temp(prescricao, false, descricaoprod, quantidadeprod, preco, &agulha);
-            cout << "Voce esta adicionando o seguinte medicamento ao estoque:" << endl;
-            // temp->InformacoesProduto();
-            // Item item(&temp, quantidadeprod);
-            adicionarAoEstoque(new Item(new Anabolizante(prescricao, false, descricaoprod, quantidadeprod, preco, &agulha), quantidadeprod));
+            int remove;
+            cout << "Voce selecionou esse item: " << estoque[index]->produto->InformacoesProduto() << "\n Existem " << estoque[index]->total << "unidades deste item no estoque, quantas deseja remover?" << endl;
+            try
+            {
+              cin >> remove;
+            }
+            catch (const std::exception &e)
+            {
+              cout << "Ops, parece que voce nao passou um número, tente novamente" << endl;
+              continue;
+            }
+
+            if (remove > estoque[index]->total)
+            {
+              cout << "Voce está tentando remover mais itens do que disponíveis, tente novamente" << endl;
+            }
+            else
+            {
+              removerDoEstoque(index, remove);
+            }
           }
         }
-        this->verEstoque();
       }
     }
   }
@@ -286,58 +357,135 @@ void Sistema::comprar(Cliente *cliente)
   while (true)
   {
     int selecao;
-    cout << "Qual tipo de produto gostaria de adicionar ao carrinho?\n1.Alimento\n2.Cosmetico\n3.Medicamento" << endl;
-    cin >> selecao;
-    if (selecao == 0)
+
+    cout << "Qual operação deseja realizar?\n1.Adicionar produto ao carrinho\n2.Remover produto do carrinho\n3.Finalizar compra" << endl;
+    try
     {
-      break;
+      cin >> selecao;
     }
-    string descricao;
-    cout << "Digite a descricao do produto desejado:" << endl;
-    cin >> descricao;
-    int disponivel = disponibilidadeItem(descricao);
-    if (disponivel == 0)
+    catch (const std::exception &e)
     {
-      cout << "Não possuimos esse produto disponível" << endl;
+      cout << "Ops, parece que voce nao passou um número, tente novamente" << endl;
+      continue;
     }
-    else
+
+    if (selecao == 3)
     {
+      this->finalizarCompra(cliente, this->vendedor);
+      return;
+    }
+
+    if (selecao == 2)
+    {
+      string descricao;
+      cout << "Digite a descrição do produto que deseja remover do carrinho" << endl;
+      cin >> descricao;
+      int index = cliente->indexItem(descricao);
+
+      int remove;
+      cout << "Voce selecionou esse item: " << cliente->carrinho[index]->produto->InformacoesProduto() << "\n Existem " << cliente->carrinho[index]->total << "unidades deste item no seu carrinho, quantas deseja remover?" << endl;
+      try
+      {
+        cin >> remove;
+      }
+      catch (const std::exception &e)
+      {
+        cout << "Ops, parece que voce nao passou um número, tente novamente" << endl;
+        continue;
+      }
+
+      if (remove > cliente->carrinho[index]->total)
+      {
+        cout << "Voce está tentando remover mais itens do que disponíveis, tente novamente" << endl;
+      }
+      else
+      {
+        cliente->removeCompraCarrinho(index, remove);
+      }
+    }
+
+    if(selecao == 1){
+
+      cout << "Qual tipo de produto gostaria de adicionar ao carrinho?\n1.Alimento\n2.Cosmetico\n3.Medicamento" << endl;
+      try
+      {
+        cin >> selecao;
+      }
+      catch (const std::exception &e)
+      {
+        cout << "Ops, parece que voce nao passou um número, tente novamente" << endl;
+        continue;
+      }
+
+      if (selecao == 0)
+      {
+        break;
+      }
+
+      string descricao;
+      cout << "Digite a descricao do produto desejado:" << endl;
+      cin >> descricao;
+      int index = indexItem(descricao);
+      int disponivel = disponibilidadeItem(index);
+
+      // Caso não haja itens disponíveis
+      if (disponivel == 0)
+      {
+        cout << "Não possuimos esse produto disponível ;-;" << endl;
+        continue;
+      }
       int qtdDesejada;
       cout << "Possuimos " << disponivel << " items disponíveis, quantos vai querer?" << endl;
-      cin >> qtdDesejada;
+      try
+      {
+        cin >> qtdDesejada;
+      }
+      catch (const std::exception &e)
+      {
+        cout << "Ops, parece que voce nao passou um número, tente novamente" << endl;
+        continue;
+      }
       if (qtdDesejada > disponivel)
       {
         cout << "Não possuímos a quantidade desejada :(" << endl;
+        continue;
       }
-      Item *itemSelecionado = estoque[indexItem(descricao)];
+
+      Item *itemSelecionado = estoque[index];
       Produto *produtoSelecionado = itemSelecionado->produto;
       if (selecao != 3)
       {
         adicionarAoCarrinho(new Item(new Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()), qtdDesejada), cliente);
+        removerDoEstoque(index, qtdDesejada);
+        continue;
       }
-      else
+      if (produtoSelecionado->precisaDeReceita)
       {
-        if (produtoSelecionado->precisaDeReceita)
-        {
-          vector<Produto> medicamento;
-          medicamento.push_back(Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()));
+        vector<Produto> medicamento;
+        medicamento.push_back(Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()));
 
-          if (farmaceutico->verificarReceita(cliente->receitas, medicamento))
-          {
-            adicionarAoCarrinho(new Item(new Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()), qtdDesejada), cliente);
-          }
-          else
-          {
-            cout << "Voce nao possui receita para o remédio desejado :(" << endl;
-          }
+        if (farmaceutico->verificarReceita(cliente->receitas, medicamento))
+        {
+          // Instancia um "clone" do produto selecionado e adiciona-o no carrinho
+          adicionarAoCarrinho(new Item(new Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()), qtdDesejada), cliente);
+          removerDoEstoque(index, qtdDesejada);
+          continue;
         }
+        cout << "Voce nao possui receita para o remédio desejado >_<" << endl;
       }
-    }
-    cliente->verCompras();
+      }
+
+      cliente->verCompras();
   }
-  this->finalizarCompra(cliente,this->vendedor);
-}
+  }
 
 Sistema::~Sistema()
 {
+    for (Item* item : estoque)
+    {
+        delete item;
+    }
+    delete vendedor;
+    delete farmaceutico;
+    delete gerente;
 }
