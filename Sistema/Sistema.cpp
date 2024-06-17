@@ -18,14 +18,14 @@ bool Sistema::adicionarAoEstoque(Item *item)
 {
   try
   {
-    for (auto &i : estoque)
-    {
-      if (i->produto == item->produto)
-      {
-        i->total += item->total;
-        return true;
-      }
-    }
+    // for (auto i : estoque)
+    // {
+    //   if (i->produto == item->produto)
+    //   {
+    //     i->total += item->total;
+    //     return true;
+    //   }
+    // }
     this->estoque.push_back(item);
     return true;
   }
@@ -61,9 +61,12 @@ void Sistema::verEstoque()
 {
   try
   {
-    for (auto &i : estoque)
+    int l = 0;
+    for (Item* i : estoque)
     {
-      cout << i->produto->InformacoesProduto() <<endl;
+      cout << i << endl;
+      cout << l << i->produto->InformacoesProduto() <<endl;
+      l++;
     }
 
   }
@@ -150,13 +153,17 @@ void Sistema::iniciar()
     int selecao;
     cout << "Selecione o seu perfil\n1.Gerente\n2.Cliente" << endl;
     cin >> selecao;
-    if (selecao = 1)
+    if (selecao == 1)
     {
       cout << "Bem vindo à interface de Gerente.\nAqui voce pode adicionar itens ao estoque." << endl;
       while (true)
       {
         cout << "Qual tipo de produto gostaria de adicionar ao estoque?\n1.Alimento\n2.Cosmetico\n3.Medicamento" << endl;
         cin >> selecao;
+        if(selecao == 0)
+        {
+          break;
+        }
 
         if (selecao == 1)
         {
@@ -177,7 +184,7 @@ void Sistema::iniciar()
           cin >> total;
 
           Item item(&temp, total);
-          adicionarAoEstoque(&item);
+          adicionarAoEstoque(new Item(new Alimento(calorias, descricaoprod, quantidadeprod, preco), total));
         }
 
         if (selecao == 2)
@@ -199,7 +206,7 @@ void Sistema::iniciar()
           cin >> total;
 
           Item item(&temp, total);
-          adicionarAoEstoque(&item);
+          adicionarAoEstoque(new Item(new Cosmetico(lote, descricaoprod, quantidadeprod, preco), total));
         }
 
         if (selecao == 3)
@@ -209,40 +216,49 @@ void Sistema::iniciar()
           int quantidadeprod;
           float preco;
 
+          cout << "Qual tipo de medicamento gostaria de adicionar ao estoque?\n1.Analgesico \n2.Antibiotico \n3.Remedio controlado\n4.Anabolizante" << endl;
+          cin >> selecao;
+
           cout << "Preencha os dados no seguinte formato: prescricao descricao quantidade preco " << endl;
           cin >> prescricao >> descricaoprod >> quantidadeprod >> preco;
 
-          cout << "Qual tipo de medicamento gostaria de adicionar ao estoque?\n1.Analgesico \n2.Antibiotico \n3.Remedio controlado\n4.Anabolizante" << endl;
-          cin >> selecao;
-          Medicamento *temp;
+          // Medicamento *temp;
 
           if (selecao == 1)
           {
-            temp = new Analgesico(prescricao, false, descricaoprod, quantidadeprod, preco);
+            // Analgesico temp(prescricao, false, descricaoprod, quantidadeprod, preco);
+            // cout << "Voce esta adicionando o seguinte medicamento ao estoque:" << endl;
+            // temp.InformacoesProduto();
+            // Item item(&temp, quantidadeprod);
+            adicionarAoEstoque(new Item(new Analgesico(prescricao, false, descricaoprod, quantidadeprod, preco), quantidadeprod));
           }
           else if (selecao == 2)
           {
-            temp = new Antibiotico(prescricao, true, descricaoprod, quantidadeprod, preco);
+            // Antibiotico temp(prescricao, true, descricaoprod, quantidadeprod, preco);
+            // cout << "Voce esta adicionando o seguinte medicamento ao estoque:" << endl;
+            // temp.InformacoesProduto();
+            // Item item(&temp, quantidadeprod);
+            adicionarAoEstoque(new Item(new Antibiotico(prescricao, true, descricaoprod, quantidadeprod, preco), quantidadeprod));
           }
           else if (selecao == 3)
           {
-            temp = new Controlado(prescricao, true, descricaoprod, quantidadeprod, preco);
+            // Controlado temp(prescricao, true, descricaoprod, quantidadeprod, preco);
+            // cout << "Voce esta adicionando o seguinte medicamento ao estoque:" << endl;
+            // temp.InformacoesProduto();
+            // Item item(&temp, quantidadeprod);
+            adicionarAoEstoque(new Item(new Controlado(prescricao, true, descricaoprod, quantidadeprod, preco), quantidadeprod));
           }
           else if (selecao == 4)
           {
-            Agulha *agulha = new Agulha("Agulha para anabolizante", quantidadeprod, 0);
-            temp = new Anabolizante(prescricao, false, descricaoprod, quantidadeprod, preco, agulha);
-          }
-
-          if (temp != nullptr)
-          {
+            Agulha agulha("Agulha para anabolizante", quantidadeprod, 0);
+            Anabolizante temp(prescricao, false, descricaoprod, quantidadeprod, preco, &agulha);
             cout << "Voce esta adicionando o seguinte medicamento ao estoque:" << endl;
-            temp->InformacoesProduto();
-
-            Item *item = new Item(temp, quantidadeprod);
-            adicionarAoEstoque(item);
+            // temp->InformacoesProduto();
+            // Item item(&temp, quantidadeprod);
+            adicionarAoEstoque(new Item(new Anabolizante(prescricao, false, descricaoprod, quantidadeprod, preco, &agulha), quantidadeprod));
           }
         }
+        this->verEstoque();
       }
     }
   }

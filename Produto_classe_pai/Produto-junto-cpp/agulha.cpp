@@ -25,7 +25,7 @@ Agulha::~Agulha(){
 }
 
 string Agulha::InformacoesProduto() {
-
-    std::cout << "Agulha para injeção do medicamento." << "Descricao:  " + Produto::getDescricaoProduto() + "\t" + "Quantidade: " + std::to_string(Produto::getQuantidadeProduto()) + "\t" + "Preco: " << std::fixed << std::setprecision(2) << Produto::getPrecoProduto();
-
+    ostringstream saida;
+    saida << "Agulha para injeção do medicamento." << "Descricao:  " + Produto::getDescricaoProduto() + "\t" + "Quantidade: " + std::to_string(Produto::getQuantidadeProduto()) + "\t" + "Preco: " << std::fixed << std::setprecision(2) << Produto::getPrecoProduto();
+    return saida.str();
 }

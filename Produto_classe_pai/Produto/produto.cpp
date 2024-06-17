@@ -30,6 +30,12 @@ float Produto::getPrecoProduto()
     return round(valor*100)/100;
 }
 
+string Produto::InformacoesProduto(){
+ ostringstream saida;
+ saida << "Descricao: " + Produto::getDescricaoProduto() + "\t" + "Quantidade: " + std::to_string(Produto::getQuantidadeProduto()) + "\t" + "Preco: " << std::fixed << std::setprecision(2) << Produto::getPrecoProduto();
+ return saida.str();
+}
+
 Produto::~Produto()
 {
     

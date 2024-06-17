@@ -1,3 +1,6 @@
+#ifndef SISTEMA
+#define SISTEMA
+
 #include "../Produto_classe_pai/Produto/produto.hpp"
 #include "../Produto_classe_pai/TiposdeProduto-hpp/alimento.hpp"
 #include "../Produto_classe_pai/TiposdeProduto-hpp/cosmetico.hpp"
@@ -41,3 +44,4 @@ public:
     bool olharCarrinho(Cliente*);
     bool finalizarCompra(Cliente*, Vendedor*);
 };
+#endif
