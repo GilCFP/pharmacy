@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build"
+CMAKE_BINARY_DIR = "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pharmacy.dir/depend.make
@@ -69,357 +69,324 @@ include CMakeFiles/pharmacy.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pharmacy.dir/flags.make
 
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o: ../Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp"
+CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o: ../Sistema/Sistema.cpp
+CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o -MF CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o.d -o CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Sistema/Sistema.cpp"
 
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.i
+CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Sistema/Sistema.cpp" > CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.i
 
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.s
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o: ../Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp"
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.i
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.s
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o: ../Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp"
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.i
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.s
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o: ../Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp"
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.i
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.s
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o: ../Pessoa_classe/Cliente_classe/Cliente.cpp
-CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Cliente_classe/Cliente.cpp"
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Cliente_classe/Cliente.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.i
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Cliente_classe/Cliente.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.s
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o: ../Pessoa_classe/Cliente_classe/Item.cpp
-CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Cliente_classe/Item.cpp"
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Cliente_classe/Item.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.i
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Cliente_classe/Item.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o: ../Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o: ../Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o: ../Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.o: ../Produto_classe_pai/Medicamentos-Testes/teste.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Medicamentos-Testes/teste.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Medicamentos-Testes/teste.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Medicamentos-Testes/teste.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o: ../Produto_classe_pai/Produto-junto-cpp/agulha.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Produto-junto-cpp/agulha.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Produto-junto-cpp/agulha.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Produto-junto-cpp/agulha.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o: ../Produto_classe_pai/Produto/produto.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Produto/produto.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Produto/produto.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Produto/produto.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.o: ../Produto_classe_pai/Produtos-Testes/main_teste.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Produtos-Testes/main_teste.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Produtos-Testes/main_teste.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/Produtos-Testes/main_teste.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o: ../Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o: ../Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o: ../Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o: ../Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o: ../Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o: ../Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.s
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o: ../Pessoa_classe/Pessoa.cpp
-CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Pessoa.cpp"
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Pessoa.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.i
-
-CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Pessoa_classe/Pessoa.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.s
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o: ../Produto_classe_pai/medicamento.cpp
-CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/medicamento.cpp"
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/medicamento.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.i
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Produto_classe_pai/medicamento.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.s
+CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Sistema/Sistema.cpp" -o CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.s
 
 CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o: CMakeFiles/pharmacy.dir/flags.make
 CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o: ../Receita_classe/Receita.cpp
 CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o -MF CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o.d -o CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Receita_classe/Receita.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o -MF CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o.d -o CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Receita_classe/Receita.cpp"
 
 CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Receita_classe/Receita.cpp" > CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Receita_classe/Receita.cpp" > CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.i
 
 CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Receita_classe/Receita.cpp" -o CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Receita_classe/Receita.cpp" -o CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.s
 
-CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o: CMakeFiles/pharmacy.dir/flags.make
-CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o: ../Sistema/Sistema.cpp
-CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o -MF CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o.d -o CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Sistema/Sistema.cpp"
+CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o: ../Produto_classe_pai/medicamento.cpp
+CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/medicamento.cpp"
 
-CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Sistema/Sistema.cpp" > CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.i
+CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/medicamento.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.i
 
-CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/Sistema/Sistema.cpp" -o CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.s
+CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/medicamento.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.s
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o: ../Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp"
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.i
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.s
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o: ../Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp"
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.i
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.s
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o: ../Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp"
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.i
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.s
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o: ../Produto_classe_pai/Produto-junto-cpp/agulha.cpp
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Produto-junto-cpp/agulha.cpp"
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Produto-junto-cpp/agulha.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.i
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Produto-junto-cpp/agulha.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.s
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o: ../Produto_classe_pai/Produto/produto.cpp
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Produto/produto.cpp"
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Produto/produto.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.i
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/Produto/produto.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.s
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o: ../Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp"
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.i
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.s
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o: ../Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp"
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.i
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.s
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o: ../Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp"
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.i
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.s
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o: ../Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp"
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.i
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/controlado.cpp.s
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o: ../Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp"
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.i
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.s
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o: ../Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o -MF CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o.d -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp"
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp" > CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.i
+
+CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp" -o CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.s
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o: ../Pessoa_classe/Pessoa.cpp
+CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Pessoa.cpp"
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Pessoa.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.i
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Pessoa.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.s
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o: ../Pessoa_classe/Cliente_classe/Cliente.cpp
+CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Cliente_classe/Cliente.cpp"
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Cliente_classe/Cliente.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.i
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Cliente_classe/Cliente.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.s
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o: ../Pessoa_classe/Cliente_classe/Item.cpp
+CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Cliente_classe/Item.cpp"
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Cliente_classe/Item.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.i
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Cliente_classe/Item.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.s
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o: ../Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp"
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.i
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.s
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o: ../Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp"
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.i
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.s
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o: ../Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp"
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.i
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.s
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o: CMakeFiles/pharmacy.dir/flags.make
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o: ../Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o -MF CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o.d -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp"
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp" > CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.i
+
+CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp" -o CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.s
 
 CMakeFiles/pharmacy.dir/main.cpp.o: CMakeFiles/pharmacy.dir/flags.make
 CMakeFiles/pharmacy.dir/main.cpp.o: ../main.cpp
 CMakeFiles/pharmacy.dir/main.cpp.o: CMakeFiles/pharmacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/pharmacy.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/main.cpp.o -MF CMakeFiles/pharmacy.dir/main.cpp.o.d -o CMakeFiles/pharmacy.dir/main.cpp.o -c "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/pharmacy.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pharmacy.dir/main.cpp.o -MF CMakeFiles/pharmacy.dir/main.cpp.o.d -o CMakeFiles/pharmacy.dir/main.cpp.o -c "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/main.cpp"
 
 CMakeFiles/pharmacy.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pharmacy.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/main.cpp" > CMakeFiles/pharmacy.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/main.cpp" > CMakeFiles/pharmacy.dir/main.cpp.i
 
 CMakeFiles/pharmacy.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pharmacy.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/main.cpp" -o CMakeFiles/pharmacy.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/main.cpp" -o CMakeFiles/pharmacy.dir/main.cpp.s
 
 # Object files for target pharmacy
 pharmacy_OBJECTS = \
-"CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o" \
-"CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o" \
-"CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o" \
-"CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o" \
-"CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o" \
-"CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o" \
+"CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o" \
+"CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o" \
+"CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o" \
 "CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o" \
 "CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o" \
 "CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o" \
-"CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.o" \
 "CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o" \
 "CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o" \
-"CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.o" \
 "CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o" \
 "CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o" \
 "CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o" \
@@ -427,27 +394,25 @@ pharmacy_OBJECTS = \
 "CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o" \
 "CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o" \
 "CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o" \
-"CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o" \
-"CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o" \
-"CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o" \
+"CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o" \
+"CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o" \
+"CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o" \
+"CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o" \
+"CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o" \
+"CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o" \
 "CMakeFiles/pharmacy.dir/main.cpp.o"
 
 # External object files for target pharmacy
 pharmacy_EXTERNAL_OBJECTS =
 
-pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o
-pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o
-pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o
-pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o
-pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o
-pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o
+pharmacy: CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o
+pharmacy: CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o
+pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o
 pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/Alimentos-cpp/PastilhaTosse.cpp.o
 pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Condicionador.cpp.o
 pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o
-pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.o
 pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o
 pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o
-pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.o
 pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o
 pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/analgesico.cpp.o
 pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/antibiotico.cpp.o
@@ -455,13 +420,16 @@ pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/cont
 pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/alimento.cpp.o
 pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposdeProduto-cpp/cosmetico.cpp.o
 pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o
-pharmacy: CMakeFiles/pharmacy.dir/Produto_classe_pai/medicamento.cpp.o
-pharmacy: CMakeFiles/pharmacy.dir/Receita_classe/Receita.cpp.o
-pharmacy: CMakeFiles/pharmacy.dir/Sistema/Sistema.cpp.o
+pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Cliente.cpp.o
+pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Cliente_classe/Item.cpp.o
+pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Farmaceutico.cpp.o
+pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Funcionario.cpp.o
+pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Gerente.cpp.o
+pharmacy: CMakeFiles/pharmacy.dir/Pessoa_classe/Classe_Funcionario/implementacao/Vendedor.cpp.o
 pharmacy: CMakeFiles/pharmacy.dir/main.cpp.o
 pharmacy: CMakeFiles/pharmacy.dir/build.make
 pharmacy: CMakeFiles/pharmacy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable pharmacy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable pharmacy"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pharmacy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -473,6 +441,6 @@ CMakeFiles/pharmacy.dir/clean:
 .PHONY : CMakeFiles/pharmacy.dir/clean
 
 CMakeFiles/pharmacy.dir/depend:
-	cd "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy" "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy" "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build" "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build" "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles/pharmacy.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy" "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy" "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build" "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build" "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles/pharmacy.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/pharmacy.dir/depend
 

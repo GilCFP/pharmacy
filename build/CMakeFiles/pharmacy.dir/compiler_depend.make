@@ -2120,9 +2120,6 @@ CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.o: ../Prod
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/sstream.tcc
 
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.o: ../Produto_classe_pai/Medicamentos-Testes/teste.cpp \
-  /usr/include/stdc-predef.h
-
 CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o: ../Produto_classe_pai/Produto-junto-cpp/agulha.cpp \
   /usr/include/stdc-predef.h \
   ../Produto_classe_pai/produto-junto-hpp/agulha.hpp \
@@ -2724,9 +2721,6 @@ CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.o: ../Produto_cla
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/sstream.tcc
-
-CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.o: ../Produto_classe_pai/Produtos-Testes/main_teste.cpp \
-  /usr/include/stdc-predef.h
 
 CMakeFiles/pharmacy.dir/Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o: ../Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp \
   /usr/include/stdc-predef.h \
@@ -5682,8 +5676,6 @@ CMakeFiles/pharmacy.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/bits/regex_constants.h:
 
-../Produto_classe_pai/Produtos-Testes/main_teste.cpp:
-
 /usr/include/c++/11/bits/random.h:
 
 /usr/include/c++/11/mutex:
@@ -5866,8 +5858,6 @@ CMakeFiles/pharmacy.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/csignal:
 
-/usr/include/setjmp.h:
-
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
@@ -5875,6 +5865,10 @@ CMakeFiles/pharmacy.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11/bits/stl_deque.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/c++/11/cfenv:
+
+/usr/include/c++/11/backward/binders.h:
 
 ../Receita_classe/Receita.cpp:
 
@@ -5992,12 +5986,6 @@ CMakeFiles/pharmacy.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/usr/include/c++/11/cfenv:
-
-/usr/include/c++/11/backward/binders.h:
-
-../Produto_classe_pai/Medicamentos-Testes/teste.cpp:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /usr/include/c++/11/unordered_map:
@@ -6059,6 +6047,8 @@ CMakeFiles/pharmacy.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/setjmp.h:
 
 ../Produto_classe_pai/tiposDeMedicamento-hpp/anabolizante.hpp:
 

@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy
+# Install script for directory: /mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

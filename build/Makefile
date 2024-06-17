@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build"
+CMAKE_BINARY_DIR = "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Germano Mark1/OneDrive - Universidade Federal de Minas Gerais/Estudos/PDS2/trabalho farmacia 2/pharmacy/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/João/OneDrive/João Pedro/Universidade/UFMG - Atividades/2º Período/PDS2/Clones/outra/pharmacy/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -369,30 +369,6 @@ Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pharmacy.dir/build.make CMakeFiles/pharmacy.dir/Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.s
 .PHONY : Produto_classe_pai/Cosmeticos-cpp/Shampoo.cpp.s
 
-Produto_classe_pai/Medicamentos-Testes/teste.o: Produto_classe_pai/Medicamentos-Testes/teste.cpp.o
-.PHONY : Produto_classe_pai/Medicamentos-Testes/teste.o
-
-# target to build an object file
-Produto_classe_pai/Medicamentos-Testes/teste.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pharmacy.dir/build.make CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.o
-.PHONY : Produto_classe_pai/Medicamentos-Testes/teste.cpp.o
-
-Produto_classe_pai/Medicamentos-Testes/teste.i: Produto_classe_pai/Medicamentos-Testes/teste.cpp.i
-.PHONY : Produto_classe_pai/Medicamentos-Testes/teste.i
-
-# target to preprocess a source file
-Produto_classe_pai/Medicamentos-Testes/teste.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pharmacy.dir/build.make CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.i
-.PHONY : Produto_classe_pai/Medicamentos-Testes/teste.cpp.i
-
-Produto_classe_pai/Medicamentos-Testes/teste.s: Produto_classe_pai/Medicamentos-Testes/teste.cpp.s
-.PHONY : Produto_classe_pai/Medicamentos-Testes/teste.s
-
-# target to generate assembly for a file
-Produto_classe_pai/Medicamentos-Testes/teste.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pharmacy.dir/build.make CMakeFiles/pharmacy.dir/Produto_classe_pai/Medicamentos-Testes/teste.cpp.s
-.PHONY : Produto_classe_pai/Medicamentos-Testes/teste.cpp.s
-
 Produto_classe_pai/Produto-junto-cpp/agulha.o: Produto_classe_pai/Produto-junto-cpp/agulha.cpp.o
 .PHONY : Produto_classe_pai/Produto-junto-cpp/agulha.o
 
@@ -440,30 +416,6 @@ Produto_classe_pai/Produto/produto.s: Produto_classe_pai/Produto/produto.cpp.s
 Produto_classe_pai/Produto/produto.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pharmacy.dir/build.make CMakeFiles/pharmacy.dir/Produto_classe_pai/Produto/produto.cpp.s
 .PHONY : Produto_classe_pai/Produto/produto.cpp.s
-
-Produto_classe_pai/Produtos-Testes/main_teste.o: Produto_classe_pai/Produtos-Testes/main_teste.cpp.o
-.PHONY : Produto_classe_pai/Produtos-Testes/main_teste.o
-
-# target to build an object file
-Produto_classe_pai/Produtos-Testes/main_teste.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pharmacy.dir/build.make CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.o
-.PHONY : Produto_classe_pai/Produtos-Testes/main_teste.cpp.o
-
-Produto_classe_pai/Produtos-Testes/main_teste.i: Produto_classe_pai/Produtos-Testes/main_teste.cpp.i
-.PHONY : Produto_classe_pai/Produtos-Testes/main_teste.i
-
-# target to preprocess a source file
-Produto_classe_pai/Produtos-Testes/main_teste.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pharmacy.dir/build.make CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.i
-.PHONY : Produto_classe_pai/Produtos-Testes/main_teste.cpp.i
-
-Produto_classe_pai/Produtos-Testes/main_teste.s: Produto_classe_pai/Produtos-Testes/main_teste.cpp.s
-.PHONY : Produto_classe_pai/Produtos-Testes/main_teste.s
-
-# target to generate assembly for a file
-Produto_classe_pai/Produtos-Testes/main_teste.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pharmacy.dir/build.make CMakeFiles/pharmacy.dir/Produto_classe_pai/Produtos-Testes/main_teste.cpp.s
-.PHONY : Produto_classe_pai/Produtos-Testes/main_teste.cpp.s
 
 Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.o: Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.cpp.o
 .PHONY : Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.o
@@ -744,18 +696,12 @@ help:
 	@echo "... Produto_classe_pai/Cosmeticos-cpp/Shampoo.o"
 	@echo "... Produto_classe_pai/Cosmeticos-cpp/Shampoo.i"
 	@echo "... Produto_classe_pai/Cosmeticos-cpp/Shampoo.s"
-	@echo "... Produto_classe_pai/Medicamentos-Testes/teste.o"
-	@echo "... Produto_classe_pai/Medicamentos-Testes/teste.i"
-	@echo "... Produto_classe_pai/Medicamentos-Testes/teste.s"
 	@echo "... Produto_classe_pai/Produto-junto-cpp/agulha.o"
 	@echo "... Produto_classe_pai/Produto-junto-cpp/agulha.i"
 	@echo "... Produto_classe_pai/Produto-junto-cpp/agulha.s"
 	@echo "... Produto_classe_pai/Produto/produto.o"
 	@echo "... Produto_classe_pai/Produto/produto.i"
 	@echo "... Produto_classe_pai/Produto/produto.s"
-	@echo "... Produto_classe_pai/Produtos-Testes/main_teste.o"
-	@echo "... Produto_classe_pai/Produtos-Testes/main_teste.i"
-	@echo "... Produto_classe_pai/Produtos-Testes/main_teste.s"
 	@echo "... Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.o"
 	@echo "... Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.i"
 	@echo "... Produto_classe_pai/TiposDeMedicamento-cpp/anabolizante.s"

@@ -1,7 +1,7 @@
 CMakeFiles/pharmacy.dir/Pessoa_classe/Pessoa.cpp.o: \
- /mnt/c/Users/Germano\ Mark1/OneDrive\ -\ Universidade\ Federal\ de\ Minas\ Gerais/Estudos/PDS2/trabalho\ farmacia\ 2/pharmacy/Pessoa_classe/Pessoa.cpp \
+ /mnt/c/Users/João/OneDrive/João\ Pedro/Universidade/UFMG\ -\ Atividades/2º\ Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Pessoa.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/Germano\ Mark1/OneDrive\ -\ Universidade\ Federal\ de\ Minas\ Gerais/Estudos/PDS2/trabalho\ farmacia\ 2/pharmacy/Pessoa_classe/Pessoa.hpp \
+ /mnt/c/Users/João/OneDrive/João\ Pedro/Universidade/UFMG\ -\ Atividades/2º\ Período/PDS2/Clones/outra/pharmacy/Pessoa_classe/Pessoa.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
