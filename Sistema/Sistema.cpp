@@ -51,8 +51,6 @@ bool Sistema::removerDoEstoque(int index, int quantidade)
     // Deleta o item do estoque
     if (estoque[index]->total == quantidade)
     {
-      // cout << estoque[index]->total << quantidade << endl;
-      // cout << "##############################" << endl;
       delete estoque[index];
       estoque.erase(estoque.begin() + index);
       return true;
@@ -311,10 +309,11 @@ void Sistema::iniciar(Gerente *gerente)
               // Instancia um novo Item com um novo Anabolizante
               if (selecao == 4)
               {
-                Agulha agulha("Agulha para anabolizante", quantidadeprod, 0);
+                Agulha* agulha = new Agulha("Agulha para anabolizante", quantidadeprod, 0);
+
 
                 bool precisaDeReceita = true;
-                adicionarAoEstoque(new Item(new Anabolizante(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco, &agulha), total));
+                adicionarAoEstoque(new Item(new Anabolizante(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco, agulha), total));
               }
             }
             this->verEstoque();
@@ -366,6 +365,7 @@ void Sistema::comprar(Cliente *cliente)
   cout << "Bem vindo à farmácia inter.\nAqui voce pode adicionar itens ao seu carrinho" << endl;
   while (true)
   {
+    cliente->verCompras();
     int selecao;
 
     cout << "Qual operação deseja realizar?\n1.Adicionar produto ao carrinho\n2.Remover produto do carrinho\n3.Finalizar compra" << endl;
@@ -379,6 +379,7 @@ void Sistema::comprar(Cliente *cliente)
       continue;
     }
 
+    //Finalizar compra
     if (selecao == 3)
     {
       this->olharCarrinho(cliente);
@@ -386,6 +387,7 @@ void Sistema::comprar(Cliente *cliente)
       return;
     }
 
+    //Remover do carrinho
     if (selecao == 2)
     {
       string descricao;
@@ -417,6 +419,7 @@ void Sistema::comprar(Cliente *cliente)
       this->olharCarrinho(cliente);
     }
 
+    //Adicionar ao carrinho
     if (selecao == 1)
     {
       this->olharCarrinho(cliente);
@@ -460,6 +463,7 @@ void Sistema::comprar(Cliente *cliente)
         cout << "Ops, parece que voce nao passou um número, tente novamente" << endl;
         continue;
       }
+
       if (qtdDesejada > disponivel)
       {
         cout << "Não possuímos a quantidade desejada :(" << endl;
@@ -476,14 +480,12 @@ void Sistema::comprar(Cliente *cliente)
         continue;
       }
       cout << estoque[index]->produto->precisaDeReceita << endl;
+
+      //Medicamento precisa de receita
       if (produtoSelecionado->precisaDeReceita)
       {
-        vector<Produto> medicamento;
-        medicamento.push_back(Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()));
-        cout << "-------------------" << endl;
-        if (farmaceutico->verificarReceita(cliente->receitas, medicamento))
+        if (farmaceutico->verificarReceita(cliente->receitas, produtoSelecionado))
         {
-          cout << "############" << endl;
           // Instancia um "clone" do produto selecionado e adiciona-o no carrinho
           adicionarAoCarrinho(new Item(new Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()), qtdDesejada), cliente);
           removerDoEstoque(index, qtdDesejada);
@@ -491,9 +493,9 @@ void Sistema::comprar(Cliente *cliente)
         }
         cout << "Voce nao possui receita para o remédio desejado >_<" << endl;
       }
-      
+
     }
-    
+
     cliente->verCompras();
   }
 }

@@ -79,6 +79,7 @@ bool Cliente::removeCompraCarrinho(int index, int quantidade)
 
 void Cliente::verCompras()
 {
+    cout << "Esse é o seu carrinho "<< this->pegarNome()<< " :\n"<<endl;
     for (auto &item : carrinho)
     {
         cout << item->produto->getDescricaoProduto() << ": (" <<item->total << ") R$: " << item->getTotal() << endl;

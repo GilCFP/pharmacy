@@ -11,6 +11,7 @@ class Farmaceutico : public Funcionario
 {
     public:
         Farmaceutico(string nome, int idade, int codigo) : Funcionario(nome, idade, codigo) {};
-        bool verificarReceita(vector<Receita> receitas, vector<Produto> medicamentos);
+        bool verificarReceita(vector<Receita> receitas, Produto* medicamentos);
+        ~Farmaceutico();
 };
 #endif

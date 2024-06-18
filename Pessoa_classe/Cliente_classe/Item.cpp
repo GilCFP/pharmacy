@@ -6,7 +6,7 @@ Item::Item(Produto* produto, int total){
 }
 Item::~Item()
 {
-
+  delete this->produto;
 }
 
 int Item::getTotal()

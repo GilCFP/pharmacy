@@ -11,5 +11,6 @@ class Funcionario : public Pessoa
     public:
         Funcionario(string nome, int idade, int codigo);
         int getCodigo();
+        ~Funcionario();
 };
 #endif

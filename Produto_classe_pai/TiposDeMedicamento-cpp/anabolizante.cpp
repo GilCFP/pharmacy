@@ -13,11 +13,11 @@ Anabolizante::Anabolizante(string prescricao, bool precisaDeReceita, string desc
 Medicamento(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco)
 {
 
-    try{    
+    try{
         if(agulha->getQuantidadeProduto() == quantidadeprod){
 
             this->agulha = agulha;
-            
+
 
         } else {
 
@@ -25,16 +25,16 @@ Medicamento(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco)
 
         }
     } catch(string e) {
-        
+
         cout << e << endl;
 
     }
-        
+
 
 }
 
 Anabolizante::~Anabolizante(){
-
+    delete this->agulha;
     cout << "Destruindo Anabolizante: " << Produto::getDescricaoProduto();
 
 }
