@@ -4,11 +4,10 @@
 using std::string;
 
 Medicamento::Medicamento(string prescricao, bool precisaDeReceita, string descricaoprod, int quantidadeprod, float preco):
-Produto(descricaoprod, quantidadeprod, preco)
+Produto(descricaoprod, precisaDeReceita, quantidadeprod, preco)
 {
 
     this->prescricao = prescricao;
-    this->precisaDeReceita = precisaDeReceita;
 
 }
 

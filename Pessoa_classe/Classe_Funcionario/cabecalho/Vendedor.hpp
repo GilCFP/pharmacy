@@ -10,5 +10,6 @@ class Vendedor : public Funcionario
     public:
         Vendedor(string nome, int idade, int codigo);
         float cobrar(vector<Item*> carrinho);
+        ~Vendedor();
 };
 #endif

@@ -12,3 +12,8 @@ int Funcionario::getCodigo()
 {
     return this->codigo;
 }
+
+Funcionario::~Funcionario() {
+
+
+}

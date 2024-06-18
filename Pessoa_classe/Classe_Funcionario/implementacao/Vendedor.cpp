@@ -11,3 +11,8 @@ float Vendedor::cobrar(vector<Item*> carrinho)
     }
     return precoTotal;
 }
+
+Vendedor::~Vendedor() {
+
+
+}

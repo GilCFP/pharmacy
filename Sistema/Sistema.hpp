@@ -24,7 +24,7 @@ private:
     Vendedor *vendedor;
     Farmaceutico *farmaceutico;
     Gerente *gerente;
-    int disponibilidadeItem(string);
+    int disponibilidadeItem(int index);
 
 
 public:
@@ -36,12 +36,12 @@ public:
     int indexItem(string descricao);
 
     bool adicionarAoEstoque(Item*);
-    bool removerDoEstoque(Item*);
+    bool removerDoEstoque(int index, int quantidade);
     void verEstoque();
 
     bool adicionarAoCarrinho(Item*, Cliente*);
 
-    bool removerDoCarrinho(Item*, Cliente*);
+    bool removerDoCarrinho(int index, int quantidade, Cliente *cliente);
 
     bool olharCarrinho(Cliente*);
     bool finalizarCompra(Cliente*, Vendedor*);

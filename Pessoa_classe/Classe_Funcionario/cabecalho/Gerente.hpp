@@ -8,5 +8,6 @@ class Gerente : public Vendedor, public Farmaceutico
 {
     public:
         Gerente(string nome, int idade, int codigo);
+        ~Gerente();
 };
 #endif

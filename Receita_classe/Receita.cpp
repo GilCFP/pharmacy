@@ -42,6 +42,7 @@ string Receita::pegarValidade()
         return "Receita fora da validade";
     }
 }
+
 string Receita::pegarQuantidade()
 {
     return "Tomar por dia " + quantidade; 

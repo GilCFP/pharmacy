@@ -13,11 +13,11 @@ Anabolizante::Anabolizante(string prescricao, bool precisaDeReceita, string desc
 Medicamento(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco)
 {
 
-    try{    
+    try{
         if(agulha->getQuantidadeProduto() == quantidadeprod){
 
             this->agulha = agulha;
-            
+
 
         } else {
 
@@ -25,16 +25,16 @@ Medicamento(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco)
 
         }
     } catch(string e) {
-        
+
         cout << e << endl;
 
     }
-        
+
 
 }
 
 Anabolizante::~Anabolizante(){
-
+    delete this->agulha;
     cout << "Destruindo Anabolizante: " << Produto::getDescricaoProduto();
 
 }
@@ -42,7 +42,7 @@ Anabolizante::~Anabolizante(){
 string Anabolizante::InformacoesProduto(){
 
     std::ostringstream saida;
-    saida << "Descricao:  " + Produto::getDescricaoProduto() + "\t" + "Quantidade: " + std::to_string(Produto::getQuantidadeProduto()) + "\t" + "\t" +  "Preco: " << std::fixed << std::setprecision(2) << Produto::getPrecoProduto();
+    saida << "Descricao:  " + Produto::getDescricaoProduto() + "\t" + "\t" + "Quantidade: " + std::to_string(Produto::getQuantidadeProduto()) + "\t" + "\t" +  "Preco: " << std::fixed << std::setprecision(2) << Produto::getPrecoProduto();
     return saida.str();
 
 }
