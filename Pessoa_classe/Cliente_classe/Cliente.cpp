@@ -59,7 +59,7 @@ bool Cliente::removeCompraCarrinho(int index, int quantidade)
         }
 
         // Deleta o item do carrinho
-        if (carrinho[index]->total = quantidade)
+        if (carrinho[index]->total == quantidade)
         {
             delete carrinho[index];
             carrinho.erase(carrinho.begin() + index);

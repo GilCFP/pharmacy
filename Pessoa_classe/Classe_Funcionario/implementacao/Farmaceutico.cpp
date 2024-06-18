@@ -23,3 +23,8 @@ bool Farmaceutico::verificarReceita(vector<Receita> receitas, Produto *medicamen
 
     return false;
 }
+
+Farmaceutico::~Farmaceutico() {
+
+
+}

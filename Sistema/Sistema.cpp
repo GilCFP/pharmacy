@@ -396,7 +396,7 @@ void Sistema::comprar(Cliente *cliente)
       int index = cliente->indexItem(descricao);
 
       int remove;
-      cout << "Voce selecionou esse item: " << cliente->carrinho[index]->produto->InformacoesProduto() << "\n Existem " << cliente->carrinho[index]->total << "unidades deste item no seu carrinho, quantas deseja remover?" << endl;
+      cout << "Voce selecionou esse item: " << cliente->carrinho[index]->produto->InformacoesProduto() << "\n Existem " << cliente->carrinho[index]->total << " unidades deste item no seu carrinho, quantas deseja remover?" << endl;
       try
       {
         cin >> remove;
@@ -444,14 +444,14 @@ void Sistema::comprar(Cliente *cliente)
       cout << "Digite a descricao do produto desejado:" << endl;
       cin >> descricao;
       int index = indexItem(descricao);
-      int disponivel = disponibilidadeItem(index);
 
       // Caso não haja itens disponíveis
-      if (disponivel == 0)
+      if (index == -1)
       {
         cout << "Não possuimos esse produto disponível ;-;" << endl;
         continue;
       }
+      int disponivel = disponibilidadeItem(index);
       int qtdDesejada;
       cout << "Possuimos " << disponivel << " items disponíveis, quantos vai querer?" << endl;
       try
@@ -495,8 +495,6 @@ void Sistema::comprar(Cliente *cliente)
       }
 
     }
-
-    cliente->verCompras();
   }
 }
 
@@ -504,9 +502,9 @@ Sistema::~Sistema()
 {
   for (Item *item : estoque)
   {
-    delete item;
+    delete &item;
   }
-  delete vendedor;
-  delete farmaceutico;
-  delete gerente;
+  delete &vendedor;
+  delete &farmaceutico;
+  delete &gerente;
 }
