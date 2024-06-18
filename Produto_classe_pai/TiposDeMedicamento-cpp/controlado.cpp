@@ -9,21 +9,9 @@ using std::endl;
 
 Controlado::Controlado(string prescricao, bool precisaDeReceita, string descricaoprod, int quantidadeprod, float preco):
 Medicamento(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco)
-{   
-    try{
-        if(Controlado::precisaDeReceita == false){
-
-            throw "Nao permitido: valor invalido.";
-
-        }
-    }  catch (string e) {
-
-        cout << e << endl;
-
-    }
-
+{
+    
 }
-
 Controlado::~Controlado(){
 
     cout << "Destruindo Controlado: " << Produto::getDescricaoProduto();

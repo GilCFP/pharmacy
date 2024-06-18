@@ -24,6 +24,7 @@ class Produto
         bool precisaDeReceita;
         Produto();
         Produto(string descricaoprod, int quantidadeprod, float preco);
+        Produto(string descricaoprod, bool precisaDeReceita, int quantidadeprod, float preco);
         virtual string InformacoesProduto();
         string getDescricaoProduto();
         int getQuantidadeProduto();

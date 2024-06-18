@@ -13,6 +13,11 @@ Produto::Produto(string descricaoprod, int quantidadeprod, float preco):
     
 }
 
+Produto::Produto(string descricaoprod, bool precisaDeReceita, int quantidadeprod, float preco):
+   descricaoprod(descricaoprod), quantidadeprod(quantidadeprod), preco(preco), precisaDeReceita(precisaDeReceita)
+{
+
+}
 
 string Produto::getDescricaoProduto()
 {
