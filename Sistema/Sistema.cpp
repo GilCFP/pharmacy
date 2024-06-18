@@ -18,11 +18,11 @@ bool Sistema::adicionarAoEstoque(Item *item)
 {
   try
   {
-    cout << "Voce está adicionando " << item->total << " unidades do seguinte item ao estoque:\n"
+    cout << "Voce está adicionando " << item->total << " "<< std::boolalpha << item->produto->precisaDeReceita << " unidades do seguinte item ao estoque:\n"
          << item->produto->InformacoesProduto() << endl;
     for (auto &i : estoque)
     {
-      if (i->produto == item->produto)
+      if (i->produto->getDescricaoProduto() == item->produto->getDescricaoProduto())
       {
         i->total += item->total;
         return true;
@@ -49,8 +49,10 @@ bool Sistema::removerDoEstoque(int index, int quantidade)
     }
 
     // Deleta o item do estoque
-    if (estoque[index]->total = quantidade)
+    if (estoque[index]->total == quantidade)
     {
+      // cout << estoque[index]->total << quantidade << endl;
+      // cout << "##############################" << endl;
       delete estoque[index];
       estoque.erase(estoque.begin() + index);
       return true;
@@ -72,10 +74,10 @@ void Sistema::verEstoque()
   try
   {
     int l = 0;
+    cout << "\nEstoque atual:" << endl;
     for (Item *i : estoque)
     {
-      cout << i << endl;
-      cout << l << i->produto->InformacoesProduto() << endl;
+      cout << l << " - (" << i->total << ") " << i->produto->InformacoesProduto() << endl;
       l++;
     }
   }
@@ -104,7 +106,7 @@ bool Sistema::removerDoCarrinho(int index, int quantidade, Cliente *cliente)
 {
   try
   {
-    return cliente->removeCompraCarrinho( index, quantidade);
+    return cliente->removeCompraCarrinho(index, quantidade);
   }
   catch (const std::exception &e)
   {
@@ -183,6 +185,10 @@ void Sistema::iniciar(Gerente *gerente)
       {
         cout << "Digite 1 para adicionar itens e 2 para remover itens" << endl;
         cin >> selecao;
+        if (selecao == 0)
+        {
+          break;
+        }
 
         if (selecao == 1)
         {
@@ -223,7 +229,7 @@ void Sistema::iniciar(Gerente *gerente)
                   cout << "Os dados informados são incompatíveis com os dados solicitados, tente novamente" << endl;
                 }
               }
-              adicionarAoEstoque(new Item(new Alimento(calorias, descricaoprod, quantidadeprod, preco), total));
+              adicionarAoEstoque(new Item(new Alimento(calorias, descricaoprod, 1, preco), total));
             }
 
             // Adiciona um cosmético ao estoque
@@ -251,7 +257,7 @@ void Sistema::iniciar(Gerente *gerente)
                   cout << "Os dados informados são incompatíveis com os dados solicitados, tente novamente" << endl;
                 }
               }
-              adicionarAoEstoque(new Item(new Cosmetico(lote, descricaoprod, quantidadeprod, preco), total));
+              adicionarAoEstoque(new Item(new Cosmetico(lote, descricaoprod, 1, preco), total));
             }
 
             // Adiciona um medicamento ao estoque
@@ -284,28 +290,31 @@ void Sistema::iniciar(Gerente *gerente)
               // Instancia um novo Item com um novo Analgésico
               if (selecao == 1)
               {
-                adicionarAoEstoque(new Item(new Analgesico(prescricao, false, descricaoprod, quantidadeprod, preco), total));
+                bool precisaDeReceita = false;
+                adicionarAoEstoque(new Item(new Analgesico(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco), total));
               }
 
               // Instancia um novo Item com um novo Antibiótico
               if (selecao == 2)
               {
-                adicionarAoEstoque(new Item(new Antibiotico(prescricao, true, descricaoprod, quantidadeprod, preco), total));
+                bool precisaDeReceita = true;
+                adicionarAoEstoque(new Item(new Antibiotico(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco), total));
               }
 
               // Instancia um novo Item com um novo remédio Controlado
               if (selecao == 3)
               {
-                adicionarAoEstoque(new Item(new Controlado(prescricao, true, descricaoprod, quantidadeprod, preco), total));
+                bool precisaDeReceita = true;
+                adicionarAoEstoque(new Item(new Controlado(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco), total));
               }
 
               // Instancia um novo Item com um novo Anabolizante
               if (selecao == 4)
               {
                 Agulha agulha("Agulha para anabolizante", quantidadeprod, 0);
-                Anabolizante temp(prescricao, false, descricaoprod, quantidadeprod, preco, &agulha);
 
-                adicionarAoEstoque(new Item(new Anabolizante(prescricao, false, descricaoprod, quantidadeprod, preco, &agulha), total));
+                bool precisaDeReceita = true;
+                adicionarAoEstoque(new Item(new Anabolizante(prescricao, precisaDeReceita, descricaoprod, quantidadeprod, preco, &agulha), total));
               }
             }
             this->verEstoque();
@@ -325,7 +334,7 @@ void Sistema::iniciar(Gerente *gerente)
           else
           {
             int remove;
-            cout << "Voce selecionou esse item: " << estoque[index]->produto->InformacoesProduto() << "\n Existem " << estoque[index]->total << "unidades deste item no estoque, quantas deseja remover?" << endl;
+            cout << "Voce selecionou esse item: " << estoque[index]->produto->InformacoesProduto() << "\n Existem " << estoque[index]->total << " unidades deste item no estoque, quantas deseja remover?" << endl;
             try
             {
               cin >> remove;
@@ -344,6 +353,7 @@ void Sistema::iniciar(Gerente *gerente)
             {
               removerDoEstoque(index, remove);
             }
+            verEstoque();
           }
         }
       }
@@ -371,6 +381,7 @@ void Sistema::comprar(Cliente *cliente)
 
     if (selecao == 3)
     {
+      this->olharCarrinho(cliente);
       this->finalizarCompra(cliente, this->vendedor);
       return;
     }
@@ -400,11 +411,15 @@ void Sistema::comprar(Cliente *cliente)
       }
       else
       {
+        adicionarAoEstoque(new Item(new Produto(cliente->carrinho[index]->produto->getDescricaoProduto(), cliente->carrinho[index]->produto->getQuantidadeProduto(), cliente->carrinho[index]->produto->getPrecoProduto()), remove));
         cliente->removeCompraCarrinho(index, remove);
       }
+      this->olharCarrinho(cliente);
     }
 
-    if(selecao == 1){
+    if (selecao == 1)
+    {
+      this->olharCarrinho(cliente);
 
       cout << "Qual tipo de produto gostaria de adicionar ao carrinho?\n1.Alimento\n2.Cosmetico\n3.Medicamento" << endl;
       try
@@ -455,17 +470,20 @@ void Sistema::comprar(Cliente *cliente)
       Produto *produtoSelecionado = itemSelecionado->produto;
       if (selecao != 3)
       {
+        // Instancia um "clone" do produto selecionado e adiciona-o no carrinho
         adicionarAoCarrinho(new Item(new Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()), qtdDesejada), cliente);
         removerDoEstoque(index, qtdDesejada);
         continue;
       }
+      cout << estoque[index]->produto->precisaDeReceita << endl;
       if (produtoSelecionado->precisaDeReceita)
       {
         vector<Produto> medicamento;
         medicamento.push_back(Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()));
-
+        cout << "-------------------" << endl;
         if (farmaceutico->verificarReceita(cliente->receitas, medicamento))
         {
+          cout << "############" << endl;
           // Instancia um "clone" do produto selecionado e adiciona-o no carrinho
           adicionarAoCarrinho(new Item(new Produto(produtoSelecionado->getDescricaoProduto(), produtoSelecionado->getQuantidadeProduto(), produtoSelecionado->getPrecoProduto()), qtdDesejada), cliente);
           removerDoEstoque(index, qtdDesejada);
@@ -473,19 +491,20 @@ void Sistema::comprar(Cliente *cliente)
         }
         cout << "Voce nao possui receita para o remédio desejado >_<" << endl;
       }
-      }
-
-      cliente->verCompras();
+      
+    }
+    
+    cliente->verCompras();
   }
-  }
+}
 
 Sistema::~Sistema()
 {
-    for (Item* item : estoque)
-    {
-        delete item;
-    }
-    delete vendedor;
-    delete farmaceutico;
-    delete gerente;
+  for (Item *item : estoque)
+  {
+    delete item;
+  }
+  delete vendedor;
+  delete farmaceutico;
+  delete gerente;
 }

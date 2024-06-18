@@ -81,7 +81,7 @@ void Cliente::verCompras()
 {
     for (auto &item : carrinho)
     {
-        cout << item->produto->getDescricaoProduto() << ": " << item->getTotal() << endl;
+        cout << item->produto->getDescricaoProduto() << ": (" <<item->total << ") R$: " << item->getTotal() << endl;
     }
 }
 
